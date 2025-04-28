@@ -20,7 +20,7 @@ export default function Banner() {
             {/* SECTION: BANNER TEXT*/}
 
             <h1 className=" text-blue-500 [ lg:text-[80px] text-[40px] ] font-medium [ lg:leading-22 leading-12  ] capitalize ">
-              {t("home.mainDesc1")} <br /> {t("home.mainDesc2")} <br />
+              {t("home.mainDesc1")} <br className="hidden lg:block" /> {t("home.mainDesc2")} <br />
               <span className="text-fm-secondary-500 ">
                 {t("home.mainDesc3")}{" "}
               </span>

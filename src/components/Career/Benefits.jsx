@@ -50,7 +50,7 @@ export default function Benefits() {
     },
   ];
   return (
-    <main className="py-20 [ lg:bg-transparent bg-blue-100 ] [ lg:w-full container mx-auto rounded-3xl ]">
+    <main className="py-20 [ lg:w-full container mx-auto rounded-3xl ]">
       <section>
         <div>
           <h1 className="[ lg:text-[56px] text-[28px] ] font-medium text-center">
