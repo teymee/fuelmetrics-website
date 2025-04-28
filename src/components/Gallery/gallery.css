@@ -1,0 +1,5 @@
+.banner-bg {
+  background: url("../../assets/svg/gallery-bg.svg") no-repeat;
+  background-position:right;
+  /* background-size: cover; */
+}

@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "career": "Career",
+    "gallery": "Gallery",
+    "contactUs": "Contact us"
+  },
+
+  "footer": {
+    "desc": "Fuelmetrics is a Company found with a strong interest in automation, ease of doing business and operation efficiency. Contact us for more information, business outline and partnership",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "privacyPolicy": "Privacy policy",
+    "services": "Services",
+    "epump": "Epump",
+    "remis": "Remis",
+    "gensys": "Gensys",
+    "chargx": "chargX",
+    "getUpdated": "Get updated",
+    "getUpdate": "Get update",
+    "enterEmail": "Enter your email"
+  },
+  "home": {
+    "desc1": "Trusted by over 200+ companies",
+    "mainDesc1": "Powering growth &  ",
+    "mainDesc2": "efficiency for ",
+    "mainDesc3": "businesses",
+    "subDesc1": "We provide innovative and affordable technology solutions to help ",
+    "subDesc2": "businesses thrive",
+    "button1": "Our testimonial videos",
+    "topBrands": "Trusted by top brands and companies",
+    "ourSolution": "Our Solutions",
+    "solutionDesc": "Our comprehensive approach to design system management is always evolving to support the new era of digital creativity, centered around open source.",
+    "foreCourt": "Fore-court automation",
+    "monitoring": "Monitoring",
+    "fleetMgt": "Fleet Management",
+    "stationService": "Station Service",
+    "foreCourtDesc": "Real-Time inventory Management System for Filling Stations  and making it rain on then like have a windy day all year and non stopping"
+  },
+  "user": {
+    "profile": {
+      "greeting": "Hello, {{name}}!",
+      "logout": "Log out"
+    }
+  },
+  "errors": {
+    "network": "Network error. Please try again.",
+    "notFound": "Page not found."
+  }
+}

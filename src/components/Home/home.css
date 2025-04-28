@@ -1,0 +1,145 @@
+.banner {
+  /* background: url("../../assets/svg/home-banner-1.svg") no-repeat;
+  background-size: cover; */
+  /* background: linear-gradient(360deg, #DDE8FF 2.84%, #FAFCFF 63.99%, #FFFFFF 99.94%); */
+  background: linear-gradient(127.82deg, rgba(255, 255, 255, 0) 20.87%, rgba(232, 239, 255, 0.815804) 46.17%, #E3ECFF 66.37%);
+
+}
+
+.cus-avatar {
+  backdrop-filter: blur(92px);
+  
+}
+
+.cus-avatar img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.solution {
+  backdrop-filter: blur(44px);
+  background-image: url("../../assets/svg/solution-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.insideFM-background {
+  backdrop-filter: blur(44px);
+  background-image: url("../../assets/svg/inside-spiral.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  /* background-size:cover; */
+}
+
+.text-opacity {
+  animation-name: fadeOutTest;
+  animation-duration: 0.5s;
+  animation-iteration: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOutTest {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.text-entry {
+  animation-name: fadeInTest;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInTest {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.move-left {
+  animation-name: moveLeft;
+  animation-duration: 2s;
+  animation-iteration: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  transition: all 2s ease;
+  opacity: 0.5;
+  z-index: 1;
+  padding: 40px 80px;
+
+}
+
+/* LEFT position */
+.left {
+  transform: translateX(-150%) translateY(-50%) scale(0.8);
+  opacity: 0.5;
+  z-index: 1;
+
+}
+
+/* CENTER position */
+.center {
+  transform: translateX(-50%) translateY(-50%) scale(1.2);
+  opacity: 1;
+  z-index: 200;
+}
+
+/* RIGHT position */
+.right {
+  transform: translateX(50%) translateY(-50%) scale(0.8);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.outline-text {
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #FFFFFF50; /* #FFFFFF50white outline */
+  text-align: center;
+  background-color: black; /* or your desired background */
+}
+
+/* hidden (out of view) */
+/* .hidden {
+  opacity: 0;
+  pointer-events: none;
+} */

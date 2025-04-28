@@ -1,0 +1,17 @@
+{
+    "home": {
+      "title": "Bienvenue sur la page d'accueil",
+      "description": "C'est la page d'accueil de l'application."
+    },
+    "user": {
+      "profile": {
+        "greeting": "Hello, {{name}}!",
+        "logout": "Log out"
+      }
+    },
+    "errors": {
+      "network": "Network error. Please try again.",
+      "notFound": "Page not found."
+    }
+  }
+  
