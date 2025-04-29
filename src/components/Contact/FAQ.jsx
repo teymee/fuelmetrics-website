@@ -25,12 +25,12 @@ export default function FAQ() {
     ]
   return (
     <section className="bg-[#C8CCD330]">
-      <section className="container [ lg:py-20 pt-80 pb-20 ]  ">
+      <section className="container [ lg:py-20 pt-[310px] pb-20 ]  ">
         <div>
           <h2 className="text-[56px] font-medium">FAQs</h2>
         </div>
 
-        <section className="mt-10 space-y-4">
+        <section className="space-y-4 [ lg:mt-10 mt-5 ] ">
             {faqs.map((faq, index) => (
                 <FAQItem faq={faq} key={index} />
             ))}

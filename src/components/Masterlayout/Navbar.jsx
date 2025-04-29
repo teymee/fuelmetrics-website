@@ -17,7 +17,7 @@ export default function Navbar() {
       <section className="  w-full left-0  fixed top-4 z-50">
         <section className=" flex-between rounded-full [  lg:w-[60%] w-[80%] ] mx-auto px-6 py-3 bg-[#FDFDFD]">
           <Link to="/">
-            <img src={logo} alt="" />
+            <img src={logo} alt="" className="lg:w-auto w-16" />
           </Link>
 
           <section className="flex-items-center gap-x-8">

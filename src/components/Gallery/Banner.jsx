@@ -4,7 +4,7 @@ import hero from "@/assets/svg/gallery-hero.svg"
 import hero2 from "@/assets/svg/gallery-bg2.svg"
 export default function Banner() {
   return (
-    <section className="container [ lg:h-[80vh] h-[60vh] ] flex-between  [ flex lg:flex-row flex-col ] banner-bg py-10">
+    <section className="container [ lg:h-[80vh] h-[90vh] ] flex-between  [ flex lg:flex-row flex-col ] banner-bg py-10">
       <section>
         <h2 className="text-[4rem] font-medium leading-20">
           Our photo <br />
@@ -22,7 +22,7 @@ export default function Banner() {
 
       <section>
        <img src={hero} alt="" className=" hidden lg:block" />
-       <img src={hero2} alt="" className="block lg:hidden"/>
+       <img src={hero2} alt="" className="block lg:hidden mt-4"/>
       </section>
     </section>
   );

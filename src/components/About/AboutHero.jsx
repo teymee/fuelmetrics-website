@@ -10,14 +10,14 @@ export default function AboutHero() {
       <section className="flex-between flex-responsive  ">
         <section className="[ lg:space-y-8 space-y-8 ] [ lg:w-1/2 w-full ]">
           <h1 className="[ lg:text-[4rem] text-[2rem] ] [ lg:text-left  text-center ] font-medium">
-            Know more about <span className="text-fm-secondary-500 "  >us</span>
+            Know more about <span className="text-fm-secondary-500 ">us</span>
           </h1>
 
           <div className=" lg:hidden flex justify-center ml-4">
-            <img src={hero2} alt="center-content " />
+            <img src={hero2} className="center-content w-[80%] mx-auto " />
           </div>
 
-          <p className=" [ lg:w-9/12 px-4 lg:px-0  ] [ lg:text-left  text-center ] [ lg:text-base text-md ] text-grey-900">
+          <p className=" [ lg:w-9/12 px-2 lg:px-0  ] [ lg:text-left  text-center ] [ lg:text-base text-sm ] text-grey-900">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
             porttitor lacus a metus accumsan, ac semper dui maximus. Proin eu
             sem nec nibh lacinia lobortis. Aliquam feugiat eu lacus eleifend
@@ -25,7 +25,7 @@ export default function AboutHero() {
             volutpat ligula.
           </p>
 
-          <div className="lg:w-fit rounded-xl bg-[#EFF4FF] text-center flex-items-center flex-responsive gap-x-10 px-6 py-4  gap-y-10">
+          <div className="lg:w-fit rounded-xl bg-[#EFF4FF] text-center flex-items-center flex-responsive gap-x-10 px-6 py-4  [ lg:gap-y-10 gap-y-4 ]">
             <div className="lg:border-r-4 pr-2 lg:border-r-white ">
               <h3 className="text-grey-900 lg:text-lg text-[10px] font-medium">
                 Our partner companies

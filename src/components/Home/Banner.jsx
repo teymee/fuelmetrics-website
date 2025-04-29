@@ -19,8 +19,9 @@ export default function Banner() {
           <section className=" py-8 space-y-4  [ lg:text-left text-center ] ">
             {/* SECTION: BANNER TEXT*/}
 
-            <h1 className=" text-blue-500 [ lg:text-[80px] text-[40px] ] font-medium [ lg:leading-22 leading-12  ] capitalize ">
-              {t("home.mainDesc1")} <br className="hidden lg:block" /> {t("home.mainDesc2")} <br />
+            <h1 className=" text-blue-500 [ lg:text-[80px] text-[28px] ] font-medium [ lg:leading-22 leading-8  ] capitalize ">
+              {t("home.mainDesc1")} <br className="hidden lg:block" />{" "}
+              {t("home.mainDesc2")} <br />
               <span className="text-fm-secondary-500 ">
                 {t("home.mainDesc3")}{" "}
               </span>
@@ -28,7 +29,7 @@ export default function Banner() {
 
             {/* SECTION CONTACT US  */}
             <div>
-              <p className="text-G-900 lg:w-1/2 font-medium">
+              <p className="text-G-900 lg:w-1/2 font-medium [ lg:text-base text-sm  ]">
                 We provide innovative and reliable technological solutions
                 designed to help businesses thrive
               </p>
@@ -42,9 +43,13 @@ export default function Banner() {
             </div> */}
 
             <div>
-              <img src={globe} alt="" className="block lg:hidden w-[80%] mx-auto" />
+              <img
+                src={globe}
+                alt=""
+                className="block lg:hidden w-[70%] mx-auto"
+              />
             </div>
-            <section className=" lg:w-fit w-full [ lg:px-4 px-4 ] flex-items-center [ lg:gap-x-4 gap-x-2 ]  transition-all duration-500 ease-in-out  py-2 cus-avatar  rounded-full mt-20 bg-blue-500/82 ">
+            <section className=" lg:w-fit w-full [ lg:px-4 px-4 ] flex-items-center [ lg:gap-x-4 gap-x-2 ]  transition-all duration-500 ease-in-out  py-2 cus-avatar  rounded-full  bg-blue-500/82 [ lg:mt-20 mt-8 ]  ">
               <div className="flex space-x-[-12px] hover:space-x-1 cursor-pointer">
                 <img src={GIG} alt="" /> <img src={nnpc} alt="" />{" "}
                 <img src={ardova} alt="" /> <img src={jumia} alt="" />{" "}

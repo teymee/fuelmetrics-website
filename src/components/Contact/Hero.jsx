@@ -22,7 +22,7 @@ export default function Hero() {
                     18 Ilupeju by-pass, <br /> Lagos
                   </p>
                 </div>
-                <section className="flex-items-center gap-x-8">
+                <section className="flex-items-center [ lg:gap-x-8 gap-x-6 ]">
                   <div className="space-y-2">
                     <h2 className="text-[18px] font-medium">Abuja office</h2>
                     <p className="text-sm">
@@ -66,7 +66,7 @@ export default function Hero() {
         </section>
         {/* FORM */}
         <section className="lg:w-[528px]">
-          <section className="bg-white [ lg:h-[700px] lg:pt-40 py-20 ] rounded-4xl ">
+          <section className="bg-white [ lg:h-[700px] lg:pt-40 lg:py-20 py-10 ] rounded-4xl ">
             <section className="w-[75%] mx-auto space-y-4">
               <h2 className="text-[20px] text-left font-bold">
                 Send us a message
