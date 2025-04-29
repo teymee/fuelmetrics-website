@@ -15,14 +15,19 @@ export default function Footer() {
   return (
     <footer className="footer py-10">
       <section className="container bg-white/10 pb-20 rounded-3xl px-4 backdrop-blur-[93px] ">
-        <section className="w-[90%] mx-auto text-white">
-          <h1 className="[ lg:text-[8rem] text-[4rem] ] text-white">Let’s <span className="hidden lg:inline">⏤</span>Talk</h1>
+        <section className="lg:w-[90%] mx-auto text-white">
+          <h1 className="[ lg:text-[8rem] text-[4rem] ] text-white">
+            Let's <span className="hidden lg:inline">⏤</span>Talk
+          </h1>
 
           <section className=" [ flex lg:flex-row flex-col ] justify-between items-start gap-x-6 ">
-            <section className="w-[35%] space-y-20">
+            <section className="lg:w-[35%] lg:space-y-20">
               <section>
-                <p className="text-base"> {t("footer.getUpdated")}</p>
-                <div className="flex-items-center  gap-x-2 mt-2 ">
+                <p className="text-base">
+                  {" "}
+                  {t("footer.getUpdated")}
+                </p>
+                <div className="flex-responsive [lg:items-center  ]  gap-2 mt-2 ">
                   <input
                     type="email"
                     placeholder={t("footer.enterEmail")}
@@ -35,19 +40,23 @@ export default function Footer() {
               </section>
 
               {/* SECTION ADDRESS & CONTACT  */}
-              <section className="flex-between mt-4">
+              <section className="flex justify-between flex-responsive gap-4  mt-4 ">
                 <section className="">
-                  <p className="font-medium text-base">Address</p>
+                  <p className="font-medium [ text-2xl lg:text-base ]">
+                    Address
+                  </p>
 
                   <div className="mt-2 ">
                     <p className="font-normal  text-base">
-                      18b ilupeju byepass, ilupeju, <br /> Lagos, Nigeria
+                      18b ilupeju byepass, ilupeju, <br className="hidden lg:block" /> Lagos, Nigeria
                     </p>
                   </div>
                 </section>
 
                 <section className="">
-                  <p className="font-medium text-base">Contact</p>
+                  <p className="font-medium [ text-2xl lg:text-base ]">
+                    Contact
+                  </p>
 
                   <div className="mt-2 ">
                     <div className="space-y-2 ">
@@ -61,7 +70,7 @@ export default function Footer() {
               {/*  */}
             </section>
 
-            <section>
+            <section className="mt-4 lg:mt-0">
               <h3 className="font-bold text-2xl">{t("footer.company")}</h3>
               <div className="font-normal my-4 text-base space-y-2">
                 <p className=""> {t("footer.aboutUs")}</p>
