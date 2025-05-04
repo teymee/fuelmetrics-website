@@ -15,7 +15,7 @@ export default function Banner() {
   return (
     <section className="">
       <section className="banner relative  [ lg:pt-[6%] pt-[20%] ] h-screen 3xl:h-[60vh]  ">
-        <section className="container [ flex-responsive justify-between ]">
+        <section className="container [ flex-responsive  justify-between ]">
           <section className=" py-8 space-y-4  [ lg:text-left text-center ] ">
             {/* SECTION: BANNER TEXT*/}
 

@@ -37,8 +37,9 @@ export default function Offers() {
           </p>
         </div>
 
-        <section className="container mx-auto my-10">
-          <article className="flex-responsive justify-center items-center gap-x-10 gap-y-8">
+
+        <section className="container mx-auto mt-10">
+          <article className="flex-responsive justify-center items-center gap-x-10 gap-y-8  ">
             {services.map((value, index) => {
               const { img, title, desc } = value;
               return (

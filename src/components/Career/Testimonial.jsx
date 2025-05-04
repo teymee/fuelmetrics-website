@@ -46,7 +46,7 @@ export default function Testimonial() {
             <p className="subHeader">Many reasons to be part of Fuelmetrics</p>
           </div>
 
-          <article className="w-[75%] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-x-4 gap-y-10 mt-10">
+          <article className="w-[75%]  mx-auto grid grid-cols-1 lg:grid-cols-4 gap-x-4 gap-y-10 mt-10">
             {testimonials.map((item, index) => {
               const { img, name, position, test } = item;
               return (

@@ -7,9 +7,9 @@ export default function CareerHero() {
     <section className="h-screen 3xl:h-[60vh]">
       <section className="[ flex-between lg:flex-row flex-col ] container   ">
         <section className="lg:w-1/2 space-y-5 [ lg:text-left text-center ] ">
-          <h1 className="font-medium [ lg:leading-16 leading-10 ] [ lg:text-[64px] text-[32px] ] ">
+          <h1 className="font-medium [ lg:leading-16 leading-10 ] [ lg:text-[64px] text-[32px] ] text-primary">
             Building teamwork that makes{" "}
-            <span className="text-primary">growth</span>
+            <span className=" text-fm-secondary-500">growth</span>
           </h1>
 
           <p className="text-G-900 [ w-full lg:w-8/12 ]">

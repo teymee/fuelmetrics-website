@@ -63,6 +63,7 @@
   /* blue */
   --color-blue-100: #f4f8ff;
   --color-blue-200: #dde8ff;
+  --color-blue-300: #E6F4F8;
   --color-blue-400: #017092;
   --color-blue-500: #5254AE;
   --color-blue-600: #f6fcff;
@@ -72,6 +73,7 @@
   /* purple  */
   --color-purple-100: #76738f;
   --color-purple-200: #613CBA;
+  --color-purple-300: #6F7782;
 
   --color-purple-500: #600070;
 
@@ -81,11 +83,9 @@
 }
 
 
-.max-container:{
-  @apply max-w-[120rem]
-}
+
 .container {
-  @apply mx-auto w-[90%] 3xl:max-w-[120rem] ;
+  @apply mx-auto w-[90%] 3xl:max-w-[110rem] ;
 }
 .flex-items-center {
   @apply flex  items-center;

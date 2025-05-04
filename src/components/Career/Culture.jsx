@@ -30,7 +30,7 @@ export default function Culture() {
   ];
   return (
     <section className="container relative top-[-70px] overflow-hidden">
-      <section className="bg-yellow-50 py-10  rounded-4xl ">
+      <section className="bg-blue-300 py-10  rounded-4xl ">
         <section className="space-y-10 container">
           {/* First section  */}
           <div className="text-center relative z-10">

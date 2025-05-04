@@ -13,7 +13,7 @@ export default function Benefits() {
         isLeft: true,
       },
       bonus: "Competitive salary and performance bonuses",
-      position: "[ lg:top-[-40px] lg:left-[80px] ] [ lg:absolute relative ]",
+      position: "[ lg:top-[-40px] lg:left-[80px]  3xl:left-[10%] ] [ lg:absolute relative ]",
     },
     {
       img: {
@@ -21,7 +21,7 @@ export default function Benefits() {
         isLeft: true,
       },
       bonus: "Health & wellness benefits",
-      position: "[ lg:bottom-30 lg:left-[80px] ] [ lg:absolute relative]",
+      position: "[ lg:bottom-30 lg:left-[80px] 3xl:left-[10%] ] [ lg:absolute relative]",
     },
     {
       img: {
@@ -29,7 +29,7 @@ export default function Benefits() {
         isLeft: false,
       },
       bonus: "Flexible work schedules (Remote/Hybrid options)",
-      position: "[ lg:top-10 lg:right-[80px] ] [ lg:absolute relative ]",
+      position: "[ lg:top-10 lg:right-[80px] 3xl:right-[15%] ] [ lg:absolute relative ]",
     },
     {
       img: {
@@ -37,7 +37,7 @@ export default function Benefits() {
         isLeft: false,
       },
       bonus: "Learning & development opportunities",
-      position: "[ lg:bottom-40 lg:right-[80px] ] [ lg:absolute relative ]",
+      position: "[ lg:bottom-40 lg:right-[80px] 3xl:right-[15%] ] [ lg:absolute relative ]",
     },
     {
       img: {
