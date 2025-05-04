@@ -7,7 +7,7 @@ export default function Masterlayout({ children }) {
   return (
     <>
       <ScrollToTop />
-      <section className="relative max-w-[120rem] mx-auto">
+      <section className="relative  mx-auto">
         <section>
           <Navbar />
         </section>

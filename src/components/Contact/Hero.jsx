@@ -5,7 +5,7 @@ import address from "@/assets/svg/white-address.svg";
 
 export default function Hero() {
   return (
-    <section className="hero-bg h-screen">
+    <section className="hero-bg h-screen 3xl:h-[60vh]">
       <section className="  mx-auto flex-start [ flex-col lg:flex-row gap-y-4 ]  [ lg:w-9/12 w-[90%] ]  [ lg:pt-[10%] pt-[30%] ]">
         {/* INFO  */}
         <section className="flex flex-col gap-y-4">

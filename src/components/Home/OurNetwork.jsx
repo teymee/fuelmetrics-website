@@ -6,7 +6,7 @@ import arrow from "@/assets/svg/white-arrow-right.svg";
 
 export default function OurNetwork() {
   return (
-    <main className="lg:py-20  [ lg:flex-items-center lg:flex-row flex flex-col space-y-4 ]">
+    <main className="lg:py-20  [ lg:flex-items-center lg:flex-row flex flex-col space-y-4 ] 3xl:max-w-[120rem] 3xl:mx-auto">
       {/* SECTION MISSION */}
       <section className="[ lg:rounded-4xl rounded-2xl ] overflow-hidden bg-yellow-50 [ lg:w-[40%] w-[90%] mx-auto ] [ lg:ml-[5%] ] py-10 relative ">
         <div className="bg-red-900 rounded-full w-[5rem] h-[5rem] absolute bottom-20 left-[-50px] "></div>

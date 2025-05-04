@@ -6,7 +6,7 @@ import hero2 from "@/assets/svg/about-hero2.svg";
 
 export default function AboutHero() {
   return (
-    <main className="h-screen container lg:pt-10 ">
+    <main className=" container lg:pt-10  h-screen 3xl:h-[60vh]  ">
       <section className="flex-between flex-responsive  ">
         <section className="[ lg:space-y-8 space-y-8 ] [ lg:w-1/2 w-full ]">
           <h1 className="[ lg:text-[4rem] text-[2rem] ] [ lg:text-left  text-center ] font-medium">

@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 @theme {
+
+  /* breakpoint  */
+  --breakpoint-3xl: 120rem;
+
+
   /* fonts  */
   --font-instrument: Instrument Serif;
   --font-inter: Inter;
@@ -75,8 +80,12 @@
   /*  */
 }
 
+
+.max-container:{
+  @apply max-w-[120rem]
+}
 .container {
-  @apply mx-auto w-[90%];
+  @apply mx-auto w-[90%] 3xl:max-w-[120rem] ;
 }
 .flex-items-center {
   @apply flex  items-center;

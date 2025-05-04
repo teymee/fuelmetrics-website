@@ -34,8 +34,8 @@ export default function Visions() {
   ];
 
   return (
-    <main className="py-40 relative">
-      <img src={coin} alt="" className="absolute top-[-50px] right-0 [ lg:flex hidden ]" />
+    <main className="py-10 relative">
+      <img src={coin} alt="" className="absolute top-[-120px] right-0 [ lg:flex hidden ]" />
       <section className="container relative space-y-10">
         <div className="text-center">
           <h1 className="header">Our Vision and Mission</h1>
@@ -43,7 +43,7 @@ export default function Visions() {
         </div>
 
         <section>
-          <section className=" [ lg:pt-20 pt-10 mb-20 ] relative [ lg:w-[85%] container ] mx-auto ">
+          <section className=" [ lg:pt-10 pt-10 mb-20 ] relative [ lg:w-[85%] container ] mx-auto ">
             <img
               src={visionImg}
               alt=""
