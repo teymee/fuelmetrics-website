@@ -16,6 +16,7 @@ i18n
     },
 
     backend: {
+      //  loadPath: "/locales/en/{{ns}}.json"
       loadPath: "/locales/{{lng}}/{{ns}}.json", // Path to translation files
     },
   });

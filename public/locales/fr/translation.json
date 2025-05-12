@@ -1,17 +1,44 @@
 {
-    "home": {
-      "title": "Bienvenue sur la page d'accueil",
-      "description": "C'est la page d'accueil de l'application."
-    },
-    "user": {
-      "profile": {
-        "greeting": "Hello, {{name}}!",
-        "logout": "Log out"
-      }
-    },
-    "errors": {
-      "network": "Network error. Please try again.",
-      "notFound": "Page not found."
+  "home": {
+    "title": "Bienvenue sur la page d'accueil",
+    "description": "C'est la page d'accueil de l'application.",
+    "mainDesc1": "Stimuler la croissance  & ",
+    "mainDesc2": "Efficacité pour ",
+    "mainDesc3": "Entreprises",
+    "desc": "Nous construisons des solutions technologiques innovantes, axées sur les données, qui simplifient les opérations, améliorent la prise de décision et ouvrent de nouvelles opportunités de croissance. Plus de 200 entreprises à travers l’Afrique nous font confiance et nos outils sont conçus pour vous aider à travailler plus intelligemment, à réduire les pertes et à évoluer en toute confiance.",
+    "trusted": "Plus de 200 entreprises nous font confiance",
+
+    "innovation": "Notre innovation,",
+    "solution": "Vos solutions",
+    "innoDesc": "Fluides, évolutives et conçues pour demain, nos technologies sont conçues pour transformer la façon dont les entreprises opèrent, évoluent et prospèrent dans le monde numérique d'aujourd'hui.",
+    "epumpSubTitle": "Contrôle total des stations-service",
+    "epumpDesc": "Surveillez chaque goutte, gérez les pompes, suivez les ventes et contrôlez les prix, le tout depuis un tableau de bord web intelligent. Epump aide les propriétaires de stations à réduire leurs pertes et à améliorer leur efficacité opérationnelle.",
+    "remisSubTitle": "Une gestion plus intelligente du carburant pour les opérateurs de flottes et de transport",
+    "remisDesc": " Des multiples options de paiement du carburant au suivi des dépenses, Remis offre aux entreprises une visibilité complète sur les dépenses des conducteurs, l'efficacité des itinéraires et le contrôle des coûts.",
+    "genSubTitle": "Automatisez et prenez en charge les opérations de votre générateur",
+    "genDesc": "Avec Gensys, vous pouvez suivre les niveaux de carburant, surveiller le temps de fonctionnement des générateurs et détecter les abus de carburant, le tout en temps réel. C'est la solution intelligente pour gérer l'utilisation des générateurs et réduire les pertes de carburant.",
+    "explore": "Explorer",
+
+    "mission": "Notre Mission & ",
+    "philosophy": "Philosophie",
+    "statement": "leaNous sommes convaincus qu'une technologie adaptée peut transformer des secteurs entiers. C'est pourquoi nous créons des solutions intelligentes, basées sur les données, qui simplifient les opérations, optimisent l'efficacité et créent de nouvelles opportunités de croissance. Forts d'un engagement profond en faveur de l'innovation, nous veillons à ce que chaque entreprise que nous accompagnons soit prête pour l'avenir.",
+    "learnMore": "Apprendre encore plus",
+    "lagosTurkey": "De Lagos à la Turkey et plus encore",
+
+    "stationOnboard": "Stations à bord",
+    "houseMetered": " Les ménages disposent de compteurs",
+    "tranCompleted":"Opérations complétées",
+    "countries": "Pays"
+
+  },
+  "user": {
+    "profile": {
+      "greeting": "Hello, {{name}}!",
+      "logout": "Log out"
     }
+  },
+  "errors": {
+    "network": "Network error. Please try again.",
+    "notFound": "Page not found."
   }
-  
+}

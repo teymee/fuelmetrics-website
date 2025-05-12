@@ -2,33 +2,38 @@ import React from "react";
 
 // ASSETS
 import onyi from "@/assets/svg/onyi.svg";
+import somto from "@/assets/svg/somto.svg";
+import oseni from "@/assets/svg/oseni.svg";
+import sediq from "@/assets/svg/sediq.svg";
 import quote from "@/assets/svg/green-quote.svg";
 import dots from "@/assets/svg/blue-dots.svg";
+import { useTranslator } from "@/hooks/useTranslator";
 export default function Testimonial() {
+  const t = useTranslator();
   const testimonials = [
     {
       img: onyi,
-      name: "John Doe",
-      position: "Software Engineer",
+      name: "Onyinye Adeniyi",
+      position: t("career.supportRep"),
       test: "I watch my career grow while working at Fuelmetrics with a very friendly work environment",
     },
 
     {
-      img: onyi,
-      name: "John Doe",
-      position: "Software Engineer",
+      img: somto,
+      name: "Somto Igwenagu",
+      position: t("career.fieldEng"),
       test: "I watch my career grow while working at Fuelmetrics with a very friendly work environment",
     },
     {
-      img: onyi,
-      name: "John Doe",
-      position: "Software Engineer",
+      img: oseni,
+      name: "Oseni Ismaila",
+      position: t("career.embedded"),
       test: "I watch my career grow while working at Fuelmetrics with a very friendly work environment",
     },
     {
-      img: onyi,
-      name: "John Doe",
-      position: "Software Engineer",
+      img: sediq,
+      name: "Abubakar Sediq",
+      position: t("career.fieldEng"),
       test: "I watch my career grow while working at Fuelmetrics with a very friendly work environment",
     },
   ];
@@ -41,9 +46,9 @@ export default function Testimonial() {
         <section className="z-20 relative">
           <div className="text-center mx-auto ">
             <h2 className="[ lg:text-[56px] text-[28px] ] font-medium">
-              Testimonials
+              {t("career.testimonials")}
             </h2>
-            <p className="subHeader">Many reasons to be part of Fuelmetrics</p>
+            <p className="subHeader">{t("career.reasons")}</p>
           </div>
 
           <article className="w-[75%]  mx-auto grid grid-cols-1 lg:grid-cols-4 gap-x-4 gap-y-10 mt-10">
@@ -52,8 +57,9 @@ export default function Testimonial() {
               return (
                 <section
                   key={index}
-                  className="bg-white shadow-2xl rounded-2xl p-8 space-y-4 "
+                  className="bg-white  rounded-2xl p-8 space-y-4 "
                 >
+                  {/* shadow-2xl */}
                   <div className="space-y-2">
                     <img
                       src={img}

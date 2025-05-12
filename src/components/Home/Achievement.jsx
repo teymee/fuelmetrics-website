@@ -6,48 +6,50 @@ import memory2 from "@/assets/svg/memory2.svg";
 import memory3 from "@/assets/svg/memory3.svg";
 import memory4 from "@/assets/svg/memory4.svg";
 import arrow from "@/assets/svg/arrow-left.png";
+import { useTranslator } from "@/hooks/useTranslator";
 
 export default function Achievement() {
+  const t = useTranslator();
   const [activeTab, setActiveTab] = useState(0);
   const achievements = [
     {
-      title: "From idea to ajao estate",
+      title: t("home.firstPro"),
       content: {
-        header: "Idea to first customer",
-        desc: "Discover the latest trends and pioneering advancements propelling businesses into the future, as we delve deep into the dynamic realm of innovative strategies, disruptive technologies, and forward-thinking practices shaping the forefront of global commerce.",
+        header: t("home.ideaToAjao"),
+        desc: t("home.story1"),
         img: achieve1,
-        year: "2013",
-        caption: "First epump prototype",
+        year: "2015",
+        caption: t("home.firstPro"),
       },
     },
     {
-      title: "Our first product",
+      title: t("home.firstProjectLaunch"),
       content: {
-        header: "Making customers to trust the brand",
-        desc: "Discover the latest trends and pioneering advancements propelling businesses into the future, as we delve deep into the dynamic realm of innovative strategies, disruptive technologies, and forward-thinking practices shaping the forefront of global commerce.",
+        header: t("home.visionReality"),
+        desc: t("home.story2"),
         img: memory2,
-        year: "2013",
-        caption: "First epump Station Installation",
+        year: "2016",
+        caption: t("home.firstInstall"),
       },
     },
     {
-      title: "Team expansion",
+      title: t("home.teamExpansion"),
       content: {
-        header: "Making the team stronger",
-        desc: "Discover the latest trends and pioneering advancements propelling businesses into the future, as we delve deep into the dynamic realm of innovative strategies, disruptive technologies, and forward-thinking practices shaping the forefront of global commerce.",
+        header: t("home.buildingTeam"),
+        desc: t("home.story3"),
         img: memory3,
-        year: "2013",
-        caption: "Staff and customer expansion ",
+        year: "2015",
+        caption: t("home.staffExpansion"),
       },
     },
     {
-      title: "Lagos to the world",
+      title: t("home.lagosWorld"),
       content: {
-        header: "Not local but with a global presence",
-        desc: "Discover the latest trends and pioneering advancements propelling businesses into the future, as we delve deep into the dynamic realm of innovative strategies, disruptive technologies, and forward-thinking practices shaping the forefront of global commerce.",
+        header: t("home.fromLocal"),
+        desc: t("home.story4"),
         img: memory4,
-        year: "2013",
-        caption: "First epump Station Installation",
+        year: "2015",
+        caption:  t("home.intercontinental")
       },
     },
   ];
@@ -77,14 +79,14 @@ export default function Achievement() {
         <div className="space-y-3 text-center">
           <span className="blue-colored-text">2005+</span>
           <p className="[ lg:text-lg text-[8px] ] text-gray-900">
-            Stations on-board
+            {t("home.stationOnboard")}
           </p>
         </div>
 
         <div className="space-y-3 text-center">
           <span className="blue-colored-text">140</span>
           <p className="[ lg:text-lg text-[8px] ] text-gray-900">
-            Households metered
+            {t("home.houseMetered")}
           </p>
         </div>
 
@@ -93,13 +95,15 @@ export default function Achievement() {
             5b <sup className="blue-colored-text lg:ml-[-20px]">+</sup>
           </span>
           <p className="[ lg:text-lg text-[8px] ] text-gray-900">
-            Transactions completed
+            {t("home.tranCompleted")}
           </p>
         </div>
 
         <div className="space-y-3 text-center">
           <span className="blue-colored-text">5</span>
-          <p className="[ lg:text-lg text-[8px] ] text-gray-900">Countries</p>
+          <p className="[ lg:text-lg text-[8px] ] text-gray-900">
+            {t("home.countries")}
+          </p>
         </div>
       </section>
 
@@ -107,16 +111,13 @@ export default function Achievement() {
       <section className="bg-white rounded-3xl py-20 px-4 ">
         <div className="space-y-3 text-center">
           <span className="blue-colored-text font-medium">
-            Since the begining
+            {t("home.sinceBegin")}
           </span>
-          <h1 className=" [ lg:text-[3rem] text-[20px] ]   text-gray-800 font-semibold">
-            What we have achieved together?
+          <h1 className=" [ lg:text-[3rem] text-[20px] ] font-inter  text-gray-800 font-semibold">
+            {t("home.achievedTogether")}
           </h1>
-          <p className="[ lg:w-[70%] w-11/12 ] mx-auto [ lg:text-base text-sm ] text-[#232323] leading-6 font-normal">
-            We've spent 20+ years tackling financial technology challenges with
-            early-stage start ups, emerging companies and established brands to
-            launch and scale innovative payment processing and digital banking
-            programs.
+          <p className="[ lg:w-[70%] w-11/12 ] mx-auto [ lg:text-base text-sm ] text-[#20242A] leading-6 font-normal">
+            {t("home.achieveDesc")}
           </p>
         </div>
 
@@ -240,8 +241,6 @@ export default function Achievement() {
               })}
             </section>
           </section>
-
-         
         </section>
       </section>
     </main>

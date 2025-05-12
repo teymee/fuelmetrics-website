@@ -8,10 +8,17 @@ import times from "@/assets/svg/x-mark.svg";
 
 // HOOKS
 import { useTranslator } from "@/hooks/useTranslator";
+import i18n from "@/i18n";
 
 export default function Navbar() {
   const t = useTranslator();
   const [open, setOpen] = useState(false);
+  console.log(i18n.language);
+
+  const toggleLang = () => {
+    const newLang = i18n.language === "en-GB" ? "fr" : "en-GB";
+    i18n.changeLanguage(newLang);
+  };
   return (
     <nav>
       <section className="  w-full left-0  fixed top-4 z-50">
@@ -36,11 +43,20 @@ export default function Navbar() {
                 </Link>
               </div>
             </div>
+
             <Link to="/contact">
               <button className=" lg:flex hidden border-primary  gap-x-2 rounded-full text-[13px] border-1 px-8 py-3 font-medium border-blue-400 text-blue-400">
                 Call us now
               </button>
             </Link>
+
+            {/* change language  */}
+            {/* <button
+              onClick={toggleLang}
+              className=" lg:flex hidden border-primary cursor-pointer gap-x-2 rounded-full text-[13px] border-1 px-8 py-3 font-medium border-blue-400 text-blue-400"
+            >
+              Change language {i18n.language}
+            </button> */}
           </section>
 
           <div className="block lg:hidden">
@@ -54,7 +70,7 @@ export default function Navbar() {
               open ? "left-0 opacity-100" : "left-[490px] opacity-0"
             }`}
           >
-            <div className="absolute right-6 top-6">
+            <div className="absolute right-6 top-6 ">
               <img
                 src={times}
                 alt=""
@@ -81,6 +97,12 @@ export default function Navbar() {
                 </Link>
               </div>
 
+              {/* change language  */}
+              {/* <button onClick={toggleLang}>
+                Change language ({i18n.language})
+              </button> */}
+              {/*  */}
+              
               <Link to="/contact">
                 <button className=" mt-10 lg:flex  border-primary  gap-x-2 rounded-full text-[13px] border-1 px-8 py-3 font-medium border-blue-400 text-blue-400">
                   Call us now

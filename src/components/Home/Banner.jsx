@@ -16,12 +16,13 @@ export default function Banner() {
     <section className="">
       <section className="banner relative  [ lg:pt-[6%] pt-[20%] ] h-screen 3xl:h-[60vh]  ">
         <section className="container [ flex-responsive  justify-between ]">
-          <section className=" py-8 space-y-4  [ lg:text-left text-center ] ">
+          <section className=" py-8 space-y-4  [ lg:text-left text-center ] lg:w-[55%] ">
             {/* SECTION: BANNER TEXT*/}
 
-            <h1 className=" text-blue-500 [ lg:text-[80px] text-[28px] ] font-medium [ lg:leading-22 leading-8  ] capitalize ">
-              {t("home.mainDesc1")} <br className="hidden lg:block" />{" "}
-              {t("home.mainDesc2")} <br />
+            <h1 className=" text-blue-500 [ lg:text-[72px] text-[28px] ] font-medium [ lg:leading-20 leading-8  ] capitalize  ">
+              {t("home.mainDesc1")}
+              {/* <br className="hidden lg:block" />{" "} */}
+              {t("home.mainDesc2")}
               <span className="text-fm-secondary-500 ">
                 {t("home.mainDesc3")}{" "}
               </span>
@@ -29,9 +30,8 @@ export default function Banner() {
 
             {/* SECTION CONTACT US  */}
             <div>
-              <p className="text-G-900 lg:w-1/2 font-medium [ lg:text-base text-sm  ]">
-                We provide innovative and reliable technological solutions
-                designed to help businesses thrive
+              <p className="text-G-900 lg:w-[80%] font-medium [ lg:text-base text-sm  ]">
+                {t("home.desc")}
               </p>
             </div>
             {/* <div className=" bg-white/30 w-fit backdrop-blur-md mt-10 rounded-full px-3 py-2">
@@ -49,14 +49,14 @@ export default function Banner() {
                 className="block lg:hidden w-[70%] mx-auto"
               />
             </div>
-            <section className=" lg:w-fit w-full [ lg:px-4 px-4 ] flex-items-center [ lg:gap-x-4 gap-x-2 ]  transition-all duration-500 ease-in-out  py-2 cus-avatar  rounded-full  bg-blue-500/82 [ lg:mt-20 mt-8 ]  ">
+            <section className=" lg:w-fit w-full [ lg:px-4 px-4 ] flex-items-center [ lg:gap-x-4 gap-x-2 ]  transition-all duration-500 ease-in-out  py-2 cus-avatar  rounded-full  bg-blue-500/82 [ lg:mt-16 mt-8 ]  ">
               <div className="flex space-x-[-12px] hover:space-x-1 cursor-pointer">
                 <img src={GIG} alt="" /> <img src={nnpc} alt="" />{" "}
                 <img src={ardova} alt="" /> <img src={jumia} alt="" />{" "}
               </div>
 
               <div className="text-white [ text-sm lg:text-base ]">
-                <p>Trusted by over 200 companies</p>
+                <p>{t("home.trusted")}</p>
               </div>
             </section>
           </section>

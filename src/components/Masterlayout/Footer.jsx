@@ -18,14 +18,15 @@ export default function Footer() {
 
   const mailtoLink = `mailto:info@fuelmetrics.com.ng?subject=${encodeURIComponent(
     "Subscribe me to updates"
-  )}&body=${encodeURIComponent(``)}`;
+  )}&body=${encodeURIComponent(`${email}`)}`;
 
   return (
     <footer className="footer py-10">
       <section className="container bg-white/10 pb-20 rounded-3xl px-4 backdrop-blur-[93px] ">
         <section className="lg:w-[90%] mx-auto text-white">
           <h1 className="[ lg:text-[8rem] text-[4rem] ] text-white">
-            Let's <span className="hidden lg:inline">⏤</span>Talk
+            {t("footer.lets")} <span className="hidden lg:inline">⏤</span>{" "}
+            {t("footer.talk")}
           </h1>
 
           <section className=" [ flex lg:flex-row flex-col ] justify-between items-start gap-x-6 ">
@@ -51,7 +52,7 @@ export default function Footer() {
               <section className="flex justify-between flex-responsive gap-4  mt-4 ">
                 <section className="">
                   <p className="font-medium [ text-2xl lg:text-base ]">
-                    Address
+                  {t("footer.address")}
                   </p>
 
                   <div className="mt-2 ">
@@ -64,15 +65,15 @@ export default function Footer() {
 
                 <section className="">
                   <p className="font-medium [ text-2xl lg:text-base ]">
-                    Contact
+                  {t("footer.contact")}
                   </p>
 
                   <div className="mt-2 ">
                     <div className="space-y-2 ">
                       <a href="tel:+2348509409952">
-                      <p>+234 850 940 9952</p>
+                        <p>+234 850 940 9952</p>
                       </a>
-                     
+
                       <a href={mailtoLink} className="mt-2">
                         <p>info@fuelmetrics.com.ng</p>
                       </a>
@@ -134,7 +135,7 @@ export default function Footer() {
           </section>
 
           <section className="border-t-2 border-white mt-10 pt-4 flex-between">
-            <p>Copyright ©2025 Fuelmetrics Ltd. </p>
+            <p>{t('footer.copyright')} ©2025 Fuelmetrics Ltd. </p>
           </section>
         </section>
       </section>

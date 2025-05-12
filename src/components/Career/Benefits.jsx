@@ -5,7 +5,9 @@ import gift from "@/assets/svg/gift.svg";
 import heart from "@/assets/svg/heart.svg";
 import calendar from "@/assets/svg/calendar.svg";
 import benefitsImg from "@/assets/svg/benefits-img.svg";
+import { useTranslator } from "@/hooks/useTranslator";
 export default function Benefits() {
+  const t = useTranslator()
   const benefits = [
     {
       img: {
@@ -53,12 +55,11 @@ export default function Benefits() {
     <main className="py-20 [ lg:w-full container mx-auto rounded-3xl ]">
       <section>
         <div>
-          <h1 className="[ lg:text-[56px] text-[28px] ] font-medium text-center">
-            Benefits and perks
+          <h1 className="[ lg:text-[56px] text-[28px] ]  font-medium text-center">
+           {t('career.loveWorking')}
           </h1>
           <p className="subHeader">
-            We offer a wide range of benefits and perks to our employees to
-            ensure their well-being and job satisfaction.
+          {t('career.subHeader')}
           </p>
         </div>
 

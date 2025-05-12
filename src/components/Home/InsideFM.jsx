@@ -5,9 +5,11 @@ import otl from "@/assets/svg/otl.svg";
 import bash from "@/assets/svg/bash.svg";
 import field from "@/assets/svg/field-engine.svg";
 import ceo from "@/assets/svg/otl-ola.svg";
+import { useTranslator } from "@/hooks/useTranslator";
 // import event1 from "@/assets/svg/event1.svg";
 
 export default function InsideFM() {
+  const t = useTranslator();
   const articles = [
     { title: "OTL Africa 2022", img: otl },
     { title: "Office vibe", img: bash },
@@ -46,13 +48,15 @@ export default function InsideFM() {
   return (
     <section className="bg-black">
       <section className="   insideFM-background pb-40">
-        <section className={`border-x-2 border-white/30 mx-auto py-20 [ lg:w-[40%] w-[90%] ]`}>
+        <section
+          className={`border-x-2 border-white/30 mx-auto py-20 [ lg:w-[40%] w-[90%] ]`}
+        >
           <p className="green-colored-text text-center text-[20px] font-medium font-inter">
-            Inside fuelmetrics
+            {t("home.insideFuel")}
           </p>
 
           <h2 className="text-white text-center [ lg:text-[3rem] text-base ] font-medium mt-4">
-            Office vibe
+            {t("home.officeVibe")}
           </h2>
         </section>
         <div className="carousel-container">
@@ -73,18 +77,11 @@ export default function InsideFM() {
       <section className="bg-black py-20  mx-auto ">
         <div className=" [ lg:text-[128px] text-[48px] ] flex-between lg:w-[65%] w-[90%]  font-medium mx-auto ">
           <h2 className="outline-text">CEO</h2>
-          <h2 className="text-white">Speech</h2>
+          <h2 className="text-white"> {t("home.speech")}</h2>
         </div>
 
         <div className="lg:w-[45%] mx-auto text-white/70 my-10 [ lg:text-[32px] text-base ] w-[90%] ">
-          <p>
-            At Fuel Metrics Inc., innovation drives us, but our people define
-            us. We are a team of bold thinkers, problem-solvers, and creators,
-            building smart solutions that empower businesses to grow. Our
-            culture thrives on collaboration, curiosity, and a relentless
-            pursuit of excellence. Together, we challenge the status quo, push
-            boundaries, and shape the future—one breakthrough at a time.
-          </p>
+          <p>{t("home.ceoSpeech")}</p> 
 
           <div className="mt-8 flex-items-center gap-x-4">
             <img src={ceo} alt="" />

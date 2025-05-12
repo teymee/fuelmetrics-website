@@ -8,6 +8,12 @@
   },
 
   "footer": {
+    "lets": "Let's",
+    "talk": "Talk",
+    "address": "Address",
+    "contact": "Contact",
+    "copyright": "Copyright",
+
     "desc": "Fuelmetrics is a Company found with a strong interest in automation, ease of doing business and operation efficiency. Contact us for more information, business outline and partnership",
     "company": "Company",
     "aboutUs": "About Us",
@@ -21,31 +27,175 @@
     "getUpdate": "Get update",
     "enterEmail": "Enter your email"
   },
+
   "home": {
     "desc1": "Trusted by over 200+ companies",
-    "mainDesc1": "Powering growth &  ",
-    "mainDesc2": "efficiency for ",
+    "mainDesc1": "Driving Growth &   ",
+    "mainDesc2": "Efficiency for ",
     "mainDesc3": "businesses",
-    "subDesc1": "We provide innovative and affordable technology solutions to help ",
-    "subDesc2": "businesses thrive",
-    "button1": "Our testimonial videos",
-    "topBrands": "Trusted by top brands and companies",
-    "ourSolution": "Our Solutions",
-    "solutionDesc": "Our comprehensive approach to design system management is always evolving to support the new era of digital creativity, centered around open source.",
-    "foreCourt": "Fore-court automation",
-    "monitoring": "Monitoring",
-    "fleetMgt": "Fleet Management",
-    "stationService": "Station Service",
-    "foreCourtDesc": "Real-Time inventory Management System for Filling Stations  and making it rain on then like have a windy day all year and non stopping"
+    "desc": "We build innovative, data-driven technology solutions that simplify operations, improve decision-making, and unlock new opportunities for growth. Trusted by over 200 companies across Africa, our tools are designed to help you work smarter, reduce losses, and scale confidently.",
+    "trusted": "Trusted by over 200 companies",
+
+    "innovation": "Our innovation",
+    "solution": "Your Solutions",
+    "innoDesc": "Seamless, scalable, and built for tomorrow. Our technologies are designed to transform how businesses operate, scale, and thrive in today’s digital world.",
+    "epumpSubTitle": "Total control for fuel stations",
+    "epumpDesc": "Monitor every drop, manage pumps, track sales, and control pricing — all from one smart, web-based dashboard. Epump helps station owners reduce losses and improve operational efficiency.",
+    "remisSubTitle": "Smarter fuel management for fleet and transport operators",
+    "remisDesc": "From multiple fuel payment options to expense tracking, Remis gives businesses full visibility into driver spending, route efficiency, and cost control.",
+    "genSubTitle": "Automate and take charge of your generator operations",
+    "genDesc": "With Gensys, you can track fuel levels, monitor generator runtime, and detect fuel misuse — all in real-time. It’s the smart way to manage generator usage and cut down on fuel losses.",
+    "explore": "Explore",
+
+    "mission": "Our Mission & ",
+    "philosophy": "Philosophy",
+    "statement": "We believe the right technology can transform entire industries. That’s why we build intelligent, data-driven solutions that simplify operations, drive efficiency, and unlock new growth opportunities. With a deep commitment to innovation, we ensure every business we serve is ready for the future.",
+    "learnMore": "Learn More",
+    "lagosTurkey": "From lagos to turkey and more",
+
+    "stationOnboard": "Stations on-board",
+    "houseMetered": " Households metered",
+    "tranCompleted": "Transactions completed",
+    "countries": "Countries",
+    "sinceBegin": "Since the begining",
+    "achievedTogether": "What we have achieved together?",
+    "achieveDesc": " For over a decade, Fuelmetrics has worked with startups, growing businesses, and established industry players to solve complex challenges in the downstream oil and gas sector—building smart, scalable solutions that automate fuel management, improve operational visibility, and drive growth.",
+    "firstPro": "First Epump Prototype",
+    "ideaToAjao": "From Idea to Ajao Estate",
+    "story1": "It all started in 2014 with our first working prototype of ePump. A smart solution for automating fuel station operations. Our breakthrough came when we tested the system live at a station in Ajao Estate, Lagos. That station became our first success story, proving that what we had built could truly transform the way fuel businesses run.",
+    "firstProjectLaunch": "Our First Product Launch",
+    "visionReality": "From Vision to Reality",
+    "story2": "We officially launched our first commercial product, enabling more fuel stations to automate their operations and make smarter business decisions.",
+    "firstInstall": "irst epump Station Installation",
+    "teamExpansion": "Team expansion",
+    "buildingTeam": "Building the Dream Team",
+    "story3": "As adoption grew, so did our team — bringing on board passionate minds driven by innovation, excellence, and customer success.",
+    "staffExpansion": "Staff expansion",
+    "lagosWorld": "Lagos to the world",
+    "fromLocal": "From Local Roots to Worldwide Reach",
+    "story4": "Fuelmetrics started in the heart of Lagos, building smart solutions for local stations. Today, our technology is trusted beyond borders, helping businesses operate better across Nigeria and worldwide.",
+    "intercontinental": "We are intercontinental",
+
+    "insideFuel": "Inside fuelmetrics",
+    "officeVibe": "Office vibe",
+    "speech": "Speech",
+    "ceoSpeech": "At Fuelmetrics Inc., innovation drives us, but our people define us. We are a team of bold thinkers, problem-solvers, and creators, building smart solutions that empower businesses to grow. Our culture thrives on collaboration, curiosity, and a relentless pursuit of excellence. Together, we challenge the status quo, push boundaries, and shape the future—one breakthrough at a time."
   },
-  "user": {
-    "profile": {
-      "greeting": "Hello, {{name}}!",
-      "logout": "Log out"
-    }
+
+  "about": {
+    "knowAbout": "Know more about",
+    "us": "us",
+    "desc": "Fuelmetrics brings deep technical expertise in the oil and gas industry, with a strong track record of delivering impactful automation solutions. With over 1,000 automated stations and metered households—and numerous national and international projects—we’re committed to helping businesses thrive through smart, scalable technology.",
+    "partneredCompanies": "Our partner companies",
+    "serviceReach": "Our service reach",
+    "futureProject": "Future projection",
+
+    "visionMission": "Our Vision and Mission",
+    "stance": "What we stand for at Fuelmetrics",
+    "vision": "Our Vision",
+    "drivingGrowth": "Driving growth and efficiency for businesses in Africa",
+    "mission": "Our Mission",
+    "provideMission": "We provide innovative and affordable technology solutions to help businesses thrive",
+
+    "ourCore": "Our core values",
+    "integrity": "Integrity",
+    "integrity1": " We are committed to maintaining the trust and  confidence of our clients, investors and employees",
+    "centric": "Customercentric",
+    "centric1": "Our clients come first. We act in their best interst and make their concerns a priority",
+    "innovation": "Innovation",
+    "inno1": "We combine creativity and experience to provide industry leading solutions that help companies achieve their business goal",
+    "excellence": "Excellence",
+    "excel1": "We strive to exceed expectations by providing the best service possible.",
+
+    "ourValue": "What Makes Us Valuable?",
+    "ourValueSubtext": "We simplify operations, empower teams, and help businesses grow through innovation and smart technology.",
+
+    "mon": "Business monitoring",
+    "mon1": "Visibility and control from a single platform",
+    "monDesc": "We connect residents, security teams, and property managers on one platform to enhance communication, ensure safety, and improve operational efficiency.",
+    "control": "Control",
+    "con1": "Take charge of your business with real-time insights",
+    "conDesc": "From fuel stations to facilities, our technology gives you end-to-end visibility and control—empowering better decisions and smoother operations.",
+    "growth": "Growth",
+    "growth1": "We help you scale, profit, and thrive",
+    "growthDesc": "Whether you're just starting out or managing a large operation, our tailored solutions are designed to drive performance and push your business closer to its goals.",
+
+    "helpGrow": "How We Help You",
+    "grow": "Grow",
+    "softwareSaas": "Software Hardware and SaaS Solutions",
+    "story1": "From intuitive software and reliable hardware to cloud-based SaaS with business-specific customizations—we deliver technology built for your exact needs.",
+    "dedication": "Dedicated service engineers",
+    "story2": "Post-installation, our experienced engineers remain available to maintain and optimize your systems, ensuring continuous performance.",
+    "cusSupport": "Reliable customer support",
+    "story3": "A great solution is nothing without dependable support. Our customer service team is always ready to assist—quickly, professionally, and at just a click.",
+
+    "meetFounder": "Meet Our Founders",
+    "greatTech": "Great technology starts with great people. At Fuelmetrics, we're led by a team of bold thinkers and builders who share a passion for growth, innovation, and impact. Here are the visionaries guiding the way.",
+    "enableFuture": "Enabling our future",
+    "ceo1": "My number one job is getting things done. I focus on supporting the broader team so that we can offer the best service possible.",
+    "manageDirector": "Managing Director",
+
+    "cso": "Chief Strategy Officer",
+    "biggestInno": "Our biggest innovator",
+    "cso1": "As head of the company, my job is to ensure everyone is focused and aligned with the company goals",
+
+    "cpo": "Chief Project Officer",
+    "visualTech": "Visualizing our technology",
+    "cpo1": "Through my passion for enhancing the interaction between people an technology. I oversee the company's  technology strategy and infrastructure.",
+
+    "bringIdeas": "Bringing our ideas to life",
+    "cto1": "My job is mobilizing technical teams for projects, recommend solutions, and technical presentation and recommendations",
+    "cto": "Chief Technical Officer",
+
+    "helpful": "We're helpful",
+    "friendly": "We're friendly",
+    "here": "We're here"
   },
-  "errors": {
-    "network": "Network error. Please try again.",
-    "notFound": "Page not found."
+  "career": {
+    "bannerText": "Together, We Build and",
+    "bannerDesc": "At Fuelmetrics, we believe that innovation thrives in a culture of collaboration. We're building a team where every individual can grow, contribute meaningfully, and drive real impact. Ready to build the future with us?",
+    "viewOpening": "View openings",
+
+    "cultureValue": "Our culture and values",
+    "cultureDesc": "At Fuelmetrics, our foundation is built on innovation, growth, and collaboration. These values shape how we work, how we lead, and how we help businesses thrive.",
+
+    "innoDesc": "We champion fresh ideas and smart solutions. Our commitment to creativity keeps us ahead—delivering efficient systems and smarter service for our clients.",
+    "growthDesc": "We believe growth starts from within. That’s why we invest in continuous learning and development—for our people and the future we’re building together.",
+    "collaboration": "Collaboration",
+    "collabDesc": "Teamwork is everything. Whether you’re new or seasoned, you’ll always find support, inclusion, and shared purpose here at Fuelmetrics.",
+
+    "loveWorking": "Why you’ll love working here",
+    "subHeader": "There are many reasons to be part of Fuelmetrics",
+    "supportRep": "Support Rep.",
+    "fieldEng": "Field engineer",
+    "embedded": "Embedded",
+    "testimonials": "Testimonials",
+    "reasons": "Many reasons to be part of Fuelmetrics",
+
+    "openPositions": "Open positions",
+    "comeJoin": "Come join the team",
+    "apply": "Apply"
+  },
+  "gallery": {
+    "our": "Our",
+    "gallery": "gallery",
+    "desc": "A vibrant collection of moments — from team milestones to company events — capturing the spirit, people, and progress of Fuelmetrics over the years.",
+
+    "events": "Events",
+    "eventDesc": "At Fuelmetrics, we celebrate progress as passionately as we pursue innovation. Every milestone reminds us of how far we've come—and where we're going.",
+    "18thOTL": "18th OTL",
+    "africaDownStream": "Africa Downstream week 2024",
+    "desc1": "Fuelmetrics was proud to participate in the 18th edition of the OTL Africa Downstream Week, the premier Pan-African initiative focused on advancing the downstream energy sector.One of our founders delivered a keynote address at the event, sharing insights on the future of fuel automation and reaffirming our commitment to driving innovation across Africa’s energy landscape",
+
+    "ipman": "2025 IPMAN",
+    "annualMeeting": "Annual general meeting",
+    "desc2": "from L-R, Fuelmetrics Marketing Manager Mrs. Folake Opanubi, (IPMAN) Outgoing Chairman Western Zone, Alh. Lamidi Tajudeen, Fuelmetrics Managing Director, Mr. Olayide Folorunso at the 2025 IPMAN annual general meeting",
+
+    "grandOpening": "Grand Re-opening",
+    "eternalStation": "Eternal Mega station, Gbagada",
+    "desc3": "Fuelmetrics Managing Director, Mr. Olayide Folorunso, and Marketing Manager, Folake Opanubi, were thrilled to engage with key executives from Eterna, including: Mrs. Phoebean Ifeadi - Executive Director, Corporate Services Mr. Aliu Kamiyo - Chief Financial Officer      Mr. Eniola Jacob Olufemi - Head, Asset Management",
+
+    "photoGallery": "Photo gallery",
+    "subHeader": "Work, wins, and the fun in between."
   }
 }

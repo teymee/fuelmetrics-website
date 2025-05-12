@@ -13,14 +13,16 @@ import grid9 from "@/assets/svg/grid9.svg";
 import grid10 from "@/assets/svg/grid10.svg";
 import grid11 from "@/assets/svg/grid11.svg";
 import grid12 from "@/assets/svg/grid12.svg";
+import { useTranslator } from "@/hooks/useTranslator";
 
 export default function PhotoGallery() {
+  const t = useTranslator()
   return (
     <section className="py-20 container">
       <div className="text-center">
-        <h2 className="header">Photo gallery</h2>
+        <h2 className="header">{t('gallery.photoGallery')}</h2>
         <p className="subHeader">
-          As we work, we never forget to celebrate our milestones
+        {t('gallery.subHeader')}
         </p>
       </div>
 

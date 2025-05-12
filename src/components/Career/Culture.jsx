@@ -6,25 +6,27 @@ import culture2 from "@/assets/svg/growth.svg";
 import culture3 from "@/assets/svg/upward-graph.svg";
 import curve1 from "@/assets/svg/culture-curve1.svg";
 import globe from "@/assets/svg/globe.svg";
+import { useTranslator } from "@/hooks/useTranslator";
 
 export default function Culture() {
+  const t = useTranslator();
   const culture = [
     {
       img: culture1,
-      title: "Innovation",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor lacus a metus accumsan, ac semper dui maximus. Proin eu sem nec nibh lacinia lobortis. Aliquam feugiat eu lacus eleifend",
+      title: t("about.innovation"),
+      desc: t("career.innoDesc"),
       link: "#",
     },
     {
       img: culture2,
-      title: "Growth",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor lacus a metus accumsan, ac semper dui maximus. Proin eu sem nec nibh lacinia lobortis. Aliquam feugiat eu lacus eleifend",
+      title: t("about.growth"),
+      desc: t("career.growthDesc"),
       link: "#",
     },
     {
       img: culture3,
-      title: "Collaboration",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor lacus a metus accumsan, ac semper dui maximus. Proin eu sem nec nibh lacinia lobortis. Aliquam feugiat eu lacus eleifend",
+      title: t("about.collaboration"),
+      desc: t("career.collabDesc"),
       link: "#",
     },
   ];
@@ -34,10 +36,9 @@ export default function Culture() {
         <section className="space-y-10 container">
           {/* First section  */}
           <div className="text-center relative z-10">
-            <h1 className="header">Our culture and values</h1>
+            <h1 className="header">{t("career.cultureValue")}</h1>
             <p className="text-G-900 [ lg:w-4/12 w-[90%] ] mx-auto text-base mt-4 italic ">
-              Innovation, growth, and staff collaboration is our main core value
-              at Fuelmetrics and that is what makes us special
+              {t("career.cultureDesc")}
             </p>
           </div>
 
@@ -64,7 +65,7 @@ export default function Culture() {
                     {item.title}
                   </h2>
                   <p className="text-base text-grey-900 mt-4">{item.desc}</p>
-                  <p className="flex-items-center rounded-full bg-fm-secondary-500 w-fit gap-x-2 px-8 py-1 mt-8 font-medium">
+                  <p className="flex-items-center rounded-full bg-primary w-fit gap-x-2 px-8 py-1 mt-8 font-medium text-white">
                     <span>Explore </span>
                     <img src={globe} alt="" />
                   </p>

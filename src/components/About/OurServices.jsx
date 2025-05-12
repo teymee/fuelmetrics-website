@@ -4,25 +4,27 @@ import React, { useEffect, useState } from "react";
 import offer1 from "@/assets/svg/offer1.svg";
 import offer2 from "@/assets/svg/offer2.svg";
 import offer3 from "@/assets/svg/offer3.svg";
+import { useTranslator } from "@/hooks/useTranslator";
 
 export default function OurServices() {
+  const t = useTranslator();
   const [activeTab, setActiveTab] = useState(0);
   const services = [
     {
-      title: "Software Hardware and SaaS",
-      desc: "Our company offers software service for your business, hardware devices to bei nstalled be it for home personal or company use for efficient event monitoring, and Software as a service with business customization option",
+      title: t("about.softwareSaas"),
+      desc: t("about.story1"),
       img: offer1,
     },
 
     {
-      title: "Available service engineers",
-      desc: "After installation, we have our engineers on ground to help you to maintain and service your home, business or station automation system for optimal efficiency",
+      title: t("about.dedication"),
+      desc: t("about.story2"),
       img: offer2,
     },
 
     {
-      title: "Standby customer support",
-      desc: "Suspendisse ac luctus odio. In ligula ex, tempor nec laoreet at, commodo in tortor. Nullam velit arcu, vulputate vitae mauris vel, venenatis dignissim nibh. Nulla sodales venenatis pretium.",
+      title: t("about.cusSupport"),
+      desc: t("about.story3"),
       img: offer3,
     },
   ];
@@ -38,9 +40,9 @@ export default function OurServices() {
   }, [services.length]);
 
   return (
-    <section >
+    <section>
       <h1 className=" [ lg:text-[3.5rem] text-2xl ] [ lg:leading-18 leading-10 ]  font-medium pb-28  text-white text-center ">
-        What we offer for your <br /> growth
+        {t("about.helpGrow")} <br /> {t("about.grow")}
       </h1>
       {/* LARGE SCREEN  */}
       <section className="container hidden lg:block pb-20 relative lg:h-[650px]">
