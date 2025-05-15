@@ -47,9 +47,9 @@ export default function InsideFM() {
 
   return (
     <section className="bg-black">
-      <section className="   insideFM-background pb-40">
+      <section className="  insideFM-background pb-40 ">
         <section
-          className={`border-x-2 border-white/30 mx-auto py-20 [ lg:w-[40%] w-[90%] ]`}
+          className={`border-x-2  border-white/30 mx-auto py-20 [ lg:w-[40%] w-[90%] ]`}
         >
           <p className="green-colored-text text-center text-[20px] font-medium font-inter">
             {t("home.insideFuel")}
@@ -74,14 +74,14 @@ export default function InsideFM() {
         </div>
       </section>
 
-      <section className="bg-black py-20  mx-auto ">
+      <section className="bg-black py-20  mx-auto container">
         <div className=" [ lg:text-[128px] text-[48px] ] flex-between lg:w-[65%] w-[90%]  font-medium mx-auto ">
           <h2 className="outline-text">CEO</h2>
           <h2 className="text-white"> {t("home.speech")}</h2>
         </div>
 
         <div className="lg:w-[45%] mx-auto text-white/70 my-10 [ lg:text-[32px] text-base ] w-[90%] ">
-          <p>{t("home.ceoSpeech")}</p> 
+          <p>{t("home.ceoSpeech")}</p>
 
           <div className="mt-8 flex-items-center gap-x-4">
             <img src={ceo} alt="" />

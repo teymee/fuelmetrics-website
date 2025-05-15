@@ -22,7 +22,7 @@ export default function Banner() {
         <img
           src={hero}
           alt=""
-          className=" hidden lg:w-[70%] lg:block absolute  -translate-y-1/2 top-1/2 right-[-8%]"
+          className=" hidden lg:w-[70%] lg:block absolute  -translate-y-1/2 top-1/2 right-[-5%]"
         />
         <img src={hero2} alt="" className="block lg:hidden mt-4" />
       </section>
