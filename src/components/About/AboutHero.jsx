@@ -39,7 +39,7 @@ export default function AboutHero() {
               {t("about.serviceReach")}
               </h3>
               <p className="text-primary font-semibold [  text-[24px] lg:text-[2.5rem] ] ">
-                144
+                1,000
               </p>
             </div>
 
@@ -48,7 +48,7 @@ export default function AboutHero() {
               {t("about.futureProject")}
               </h3>
               <p className="text-primary font-semibold [  text-[24px] lg:text-[2.5rem] ] ">
-                10,000+
+                10k+
               </p>
             </div>
           </div>

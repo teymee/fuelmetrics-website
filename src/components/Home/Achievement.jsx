@@ -77,7 +77,7 @@ export default function Achievement() {
       {/* SECTION METRICS */}
       <section className="bg-white flex justify-around w-full rounded-3xl py-4 px-4 [ lg:text-[64px] text-[24px] ] font-medium">
         <div className="space-y-3 text-center">
-          <span className="blue-colored-text">2005+</span>
+          <span className="blue-colored-text">2,005+</span>
           <p className="[ lg:text-lg text-[8px] ] text-gray-900">
             {t("home.stationOnboard")}
           </p>

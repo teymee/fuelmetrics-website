@@ -4,6 +4,7 @@ import React from "react";
 import gift from "@/assets/svg/gift.svg";
 import heart from "@/assets/svg/heart.svg";
 import calendar from "@/assets/svg/calendar.svg";
+import event from "@/assets/svg/team-event.svg"
 import benefitsImg from "@/assets/svg/benefits-img.svg";
 import { useTranslator } from "@/hooks/useTranslator";
 export default function Benefits() {
@@ -43,7 +44,7 @@ export default function Benefits() {
     },
     {
       img: {
-        src: calendar,
+        src: event,
         isLeft: true,
       },
       bonus: "Team events & company retreats",
