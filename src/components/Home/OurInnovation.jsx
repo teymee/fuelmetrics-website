@@ -43,7 +43,7 @@ export default function OurInnovation() {
 
   return (
     <main className="container">
-      <section className=" bg-white-500 py-20 rounded-3xl top-[-40px] relative solution ">
+      <section className=" bg-white-500 py-20 rounded-3xl mb-10 relative solution ">
         <section className="container">
           <section className="text-center  space-y-2">
             <h1 className="[ lg:text-[3rem] text-[1.375rem] ] font-semibold text-black font-inter">

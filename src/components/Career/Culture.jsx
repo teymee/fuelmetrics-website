@@ -25,7 +25,7 @@ export default function Culture() {
     },
     {
       img: culture3,
-      title: t("about.collaboration"),
+      title: t("career.collaboration"),
       desc: t("career.collabDesc"),
       link: "#",
     },

@@ -11,7 +11,7 @@ export default function Home() {
     <Masterlayout>
       <section className="">
         <Banner />
-        <section className="bg-blue-200">
+        <section className="bg-blue-200 lg:pt-10">
           <OurInnovation />
           <OurNetwork />
           <Achievement />

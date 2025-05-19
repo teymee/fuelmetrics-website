@@ -4,6 +4,10 @@
   /* background: linear-gradient(360deg, #DDE8FF 2.84%, #FAFCFF 63.99%, #FFFFFF 99.94%); */
   background: linear-gradient(127.82deg, rgba(255, 255, 255, 0) 20.87%, rgba(232, 239, 255, 0.815804) 46.17%, #E3ECFF 66.37%);
 
+ 
+}
+.gradient{
+ background: linear-gradient(127.82deg,  #E3ECFF  20.87%, rgba(232, 239, 255, 0.815804) 46.17%);
 }
 
 .cus-avatar {

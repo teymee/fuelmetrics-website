@@ -39,7 +39,7 @@ export default function Testimonial() {
   ];
   return (
     <main>
-      <section className="bg-white testimonial relative pt-20 pb-40">
+      <section className="bg-[#FCFCFC] testimonial relative pt-20 pb-40">
         <img src={dots} alt="" className="absolute right-0 top-[10%] z-10" />
         <img src={dots} alt="" className="absolute left-0 bottom-10" />
 
