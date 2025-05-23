@@ -49,7 +49,7 @@ export default function Achievement() {
         desc: t("home.story4"),
         img: memory4,
         year: "2015",
-        caption:  t("home.intercontinental")
+        caption: t("home.intercontinental"),
       },
     },
   ];
@@ -73,7 +73,7 @@ export default function Achievement() {
     });
   };
   return (
-    <main className="container space-y-4 py-10 ">
+    <main className="container py-10 space-y-4 ">
       {/* SECTION METRICS */}
       <section className="bg-white flex justify-around w-full rounded-3xl py-4 px-4 [ lg:text-[64px] text-[24px] ] font-medium">
         <div className="space-y-3 text-center">
@@ -108,15 +108,15 @@ export default function Achievement() {
       </section>
 
       {/* SECTION ACHEIVEMENTS */}
-      <section className="bg-white rounded-3xl py-20 px-4 ">
+      <section className="px-4 py-20 bg-white rounded-3xl ">
         <div className="space-y-3 text-center">
-          <span className="blue-colored-text font-medium">
+          <span className="font-medium blue-colored-text">
             {t("home.sinceBegin")}
           </span>
           <h1 className=" [ lg:text-[3rem] text-[20px] ] font-inter  text-gray-800 font-semibold">
             {t("home.achievedTogether")}
           </h1>
-          <p className="[ lg:w-[70%] w-11/12 ] mx-auto [ lg:text-base text-sm ] text-[#20242A] leading-6 font-normal">
+          <p className="[ lg:w-[70%] w-11/12 ] mx-auto [ lg:text-base text-sm ] text-[#23232390] leading-6 font-normal font-inter">
             {t("home.achieveDesc")}
           </p>
         </div>
@@ -176,7 +176,7 @@ export default function Achievement() {
                   <h3 className="text-sm font-medium">
                     {achievements[activeTab]?.content?.caption}
                   </h3>
-                  <p className="italic mt-1 text-grey-70">
+                  <p className="mt-1 italic text-grey-70">
                     {achievements[activeTab]?.content?.year}
                   </p>
                   <img
@@ -213,7 +213,7 @@ export default function Achievement() {
                     <div className=" w-[50%] z-20 [ lg:block hidden  ]">
                       <section className="bg-grey-400 px-6 py-4 mt-[-20px] flex-col items-end  justify-self-end">
                         <h3 className="text-base font-medium">{caption}</h3>
-                        <p className="italic mt-1 text-grey-70">{year}</p>
+                        <p className="mt-1 italic text-grey-70">{year}</p>
                         <img src={img} alt={title} className="mt-4" />
                       </section>
                     </div>
@@ -221,14 +221,14 @@ export default function Achievement() {
                     {/* buttons  */}
                     <div className="flex-items-center gap-x-4 absolute  z-50 [ lg:bottom-12 bottom-[-80px] ] ">
                       <button
-                        className="cursor-pointer bg-white px-6 border py-4 rounded-full"
+                        className="px-6 py-4 bg-white border rounded-full cursor-pointer"
                         onClick={() => handleSwitch("prev")}
                       >
                         {" "}
                         <img src={arrow} alt="" />
                       </button>
                       <button
-                        className="cursor-pointer bg-white px-6 border py-4 rounded-full"
+                        className="px-6 py-4 bg-white border rounded-full cursor-pointer"
                         onClick={() => handleSwitch("next")}
                       >
                         {" "}
