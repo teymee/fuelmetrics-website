@@ -14,7 +14,7 @@ export default function Banner() {
   const t = useTranslator();
   return (
     <section className="">
-      <section className="banner relative  [ lg:pt-[6%] pt-[20%] ] [ lg:h-[105vh] h-screen 3xl:h-[60vh] ] ">
+      <section className="banner relative  [ lg:pt-[8%] 2xl:pt-[7%] pt-[20%] ] [ lg:h-[105vh] h-screen 2xl:h-[80vh] 3xl:h-[60vh] ] ">
         <section className="container [ flex-responsive  justify-between ]">
           <section className=" py-8 space-y-4  [ lg:text-left text-center ] lg:w-[55%] ">
             {/* SECTION: BANNER TEXT*/}
@@ -46,7 +46,7 @@ export default function Banner() {
               <img
                 src={globe}
                 alt=""
-                className="block lg:hidden w-[70%] mx-auto"
+                className="block lg:hidden w-[70%] mx-auto "
               />
             </div>
             <section className=" lg:w-fit w-full [ lg:px-4 px-4 ] flex-items-center [ lg:gap-x-4 gap-x-2 ]  transition-all duration-500 ease-in-out  py-2 cus-avatar  rounded-full  bg-blue-500/82 [ lg:mt-16 mt-8 ]  ">
@@ -62,7 +62,7 @@ export default function Banner() {
           </section>
 
           <div>
-            <img src={globe} alt="" className="lg:block hidden" />
+            <img src={globe} alt="" className="lg:block hidden mt-[-40px]" />
           </div>
         </section>
       </section>

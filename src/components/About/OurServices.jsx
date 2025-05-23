@@ -90,6 +90,7 @@ export default function OurServices() {
           const { title, desc, img } = service;
           return (
             <div
+            key={index}
               className={`flex flex-col text-center text-white transition-all duration-500  justify-center items-center absolute  bottom-30 ${
                 activeTab === index ? "opacity-100" : "opacity-0"
               }`}

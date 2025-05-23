@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 // ASSETS
 import logo from "@/assets/svg/FM-logo.svg";
@@ -24,32 +24,41 @@ export default function Navbar() {
     <nav>
       <section className="  w-full left-0  fixed top-4 z-50">
         <section className=" flex-between rounded-full [  lg:w-[60%] w-[80%] ] mx-auto px-6 py-3 bg-[#FDFDFD] ">
-          <Link to="/">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active-nav" : undefined)}
+            end
+          >
             <img src={logo} alt="" className="lg:w-auto w-16" />
-          </Link>
+          </NavLink>
 
           <section className="flex-items-center gap-x-8">
             <div className=" nav-items font-medium ">
               <div className="lg:flex hidden gap-x-14">
-                <Link to="/about">
-                  <p className="nav-item"> {t("nav.about")}</p>
-                </Link>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive ? "active-nav" : undefined
+                  }
+                >
+                  <p > {t("nav.about")}</p>
+                </NavLink>
 
-                <Link to="/career">
+                <NavLink to="/career">
                   <p className="nav-item">{t("nav.career")}</p>
-                </Link>
+                </NavLink>
 
-                <Link to="/gallery">
+                <NavLink to="/gallery">
                   <p className="nav-item">{t("nav.gallery")}</p>
-                </Link>
+                </NavLink>
               </div>
             </div>
 
-            <Link to="/contact">
+            <NavLink to="/contact">
               <button className=" lg:flex hidden border-primary  gap-x-2 rounded-full text-[13px] border-1 px-8 py-3 font-medium border-blue-400 text-blue-400">
                 {t("nav.contactUs")}
               </button>
-            </Link>
+            </NavLink>
 
             {/* change language  */}
             {/* <button
@@ -82,20 +91,20 @@ export default function Navbar() {
 
             <section className="flex flex-col items-center w-full h-full absolute top-[25%]  ">
               <div className=" flex flex-col font-inter space-y-10">
-                <Link to="/">
+                <NavLink to="/">
                   <p className="nav-item"> {t("nav.home")}</p>
-                </Link>
-                <Link to="/about">
+                </NavLink>
+                <NavLink to="/about">
                   <p className="nav-item"> {t("nav.about")}</p>
-                </Link>
+                </NavLink>
 
-                <Link to="/career">
+                <NavLink to="/career">
                   <p className="nav-item">{t("nav.career")}</p>
-                </Link>
+                </NavLink>
 
-                <Link to="/gallery">
+                <NavLink to="/gallery">
                   <p className="nav-item">{t("nav.gallery")}</p>
-                </Link>
+                </NavLink>
               </div>
 
               {/* change language  */}
@@ -104,11 +113,11 @@ export default function Navbar() {
               </button> */}
               {/*  */}
 
-              <Link to="/contact">
+              <NavLink to="/contact">
                 <button className=" mt-10 lg:flex  border-primary  gap-x-2 rounded-full text-[13px] border-1 px-8 py-3 font-medium border-blue-400 text-blue-400">
                   {t("nav.contactUs")}
                 </button>
-              </Link>
+              </NavLink>
             </section>
           </section>
         </section>

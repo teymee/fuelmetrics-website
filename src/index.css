@@ -193,6 +193,8 @@ body {
 }
 /* navbar  */
 
+
+
 .nav-items p {
   font-size: 15px;
   cursor: pointer;
@@ -202,6 +204,10 @@ body {
 
 .nav-item:hover {
   color: var(--primary-color);
+}
+
+.active-nav{
+  color: red !important 
 }
 
 /*  */
