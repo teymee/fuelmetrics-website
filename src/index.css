@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @import "tailwindcss";
 
 /* fonts  */
@@ -112,6 +113,13 @@
   font-weight: 400;
   font-style: italic;
 }
+.lightblue-colored-text {
+  background: linear-gradient(268.64deg, #570de6 20.94%, #01b7ab 63.91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* fallback for future-proofing */
+  color: transparent; /* just in case */
+}
 
 .blue-colored-text {
   background: linear-gradient(89.92deg, #570de6 -2.87%, #01b7ab 95.53%);
@@ -128,12 +136,10 @@
   background-clip: text; /* fallback for future-proofing */
   color: transparent; /* just in case */
 }
-.footer{
+.footer {
   background: url("./assets/svg/footer-img.svg") no-repeat;
   background-size: cover;
 }
-
-
 
 /* imprints  */
 ::selection {
@@ -193,8 +199,6 @@ body {
 }
 /* navbar  */
 
-
-
 .nav-items p {
   font-size: 15px;
   cursor: pointer;
@@ -206,8 +210,8 @@ body {
   color: var(--primary-color);
 }
 
-.active-nav{
-  color: red !important 
+.active-nav {
+  color: red !important;
 }
 
 /*  */
@@ -224,4 +228,3 @@ body {
     background-color: #f9f9f9;
   }
 }
-

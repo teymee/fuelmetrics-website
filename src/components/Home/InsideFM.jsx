@@ -5,6 +5,8 @@ import otl from "@/assets/svg/otl.svg";
 import bash from "@/assets/svg/bash.svg";
 import field from "@/assets/svg/field-engine.svg";
 import ceo from "@/assets/svg/otl-ola.svg";
+import quotation from "@/assets/svg/quotation-mark.svg";
+import quotation2 from "@/assets/svg/quotation2.svg";
 import { useTranslator } from "@/hooks/useTranslator";
 // import event1 from "@/assets/svg/event1.svg";
 
@@ -46,8 +48,8 @@ export default function InsideFM() {
   };
 
   return (
-    <section className="bg-black">
-      <section className="  insideFM-background pb-40 ">
+    <section className="bg-black insideFM-background">
+      <section className=" ">
         <section
           className={`border-x-2  border-white/30 mx-auto py-20 [ lg:w-[40%] w-[90%] ]`}
         >
@@ -74,22 +76,50 @@ export default function InsideFM() {
         </div>
       </section>
 
-      <section className="bg-black py-20  mx-auto container">
-        <div className=" [ lg:text-[128px] text-[48px] ] flex-between lg:w-[65%] w-[90%]  font-medium mx-auto ">
-          <h2 className="outline-text">CEO</h2>
+      <div className="w-[20%] h-[3px] bg-purple-400 mx-auto my-28"></div>
+
+      <section className="w-full  lg:pl-[10%] mx-auto relative pb-40 2xl:w-[70%] 3xl:w-[60%] overflow-x-hidden">
+        <div className=" [ lg:text-[128px] text-[48px] ] flex gap-x-8  font-medium mx-auto ">
+          <h2 className="outline-text">CEO's</h2>
           <h2 className="text-white"> {t("home.speech")}</h2>
         </div>
 
-        <div className="lg:w-[45%] mx-auto text-white/70 my-10 [ lg:text-[32px] text-base ] w-[90%] ">
-          <p>{t("home.ceoSpeech")}</p>
+        <section className="relative lg:w-[40%] ">
+          {/* quotation  */}
+          <img
+            src={quotation2}
+            alt=""
+            className="absolute left-[-50px] top-[-60px] z-0 "
+          />
 
-          <div className="mt-8 flex-items-center gap-x-4">
-            <img src={ceo} alt="" />
-            <div>
-              <p className="italic text-base">Olayide folorunsho</p>
-              <p className="text-sm mt-1">CEO Fuelmetrics ltd</p>
-            </div>
+          {/* ceo's speech */}
+          <div className="relative !z-40 ">
+            <h2 className="lightblue-colored-text text-xl font-semibold mb-10">
+              {t("home.tagline")}
+            </h2>
+            <p className="text-white  [ text-[1.25rem] max-xs:text-[14px] ]  [ max-xs:w-[80%] ] relative !z-50 ">
+              {t("home.ceoSpeech")}
+            </p>
           </div>
+
+          {/* quotatation  */}
+          <img
+            src={quotation}
+            alt=""
+            className="absolute [ right-[-50px] max-xs:right-0 ] bottom-[30px] z-0 max-xs:w-[44px]  "
+          />
+          {/* ceo name  */}
+          <div className="mt-20 font-mediums">
+            <p className="italic text-base text-green-100  text-xl font-semibold font-instrument">
+              Olayide folorunsho
+            </p>
+            <p className="  mt-1 text-white">CEO Fuelmetrics ltd</p>
+          </div>
+        </section>
+
+        {/* CEO image */}
+        <div className="absolute right-0  max-xs:right-[-90px] top-[20%] !z-0">
+          <img src={ceo} alt="" />
         </div>
       </section>
     </section>

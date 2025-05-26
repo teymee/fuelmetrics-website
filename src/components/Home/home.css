@@ -137,9 +137,9 @@
 .outline-text {
   font-weight: bold;
   color: transparent;
-  -webkit-text-stroke: 2px #FFFFFF50; /* #FFFFFF50white outline */
+  -webkit-text-stroke: 2px #FFFFFF; /* #FFFFFF50white outline */
   text-align: center;
-  background-color: black; /* or your desired background */
+
 }
 
 /* hidden (out of view) */
