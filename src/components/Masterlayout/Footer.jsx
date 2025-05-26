@@ -3,6 +3,7 @@ import React, { useState } from "react";
 //ASSETS
 import twitter from "@/assets/svg/white-x.svg";
 import insta from "@/assets/svg/white-insta.svg";
+import facebook from "@/assets/svg/facebook.svg";
 // import whiteLogo from "@/assets/svg/white-logo.svg";
 // import youtube from "@/assets/svg/white-youtube.svg";
 import linkedIn from "@/assets/svg/white-linkedIn.svg";
@@ -29,61 +30,42 @@ export default function Footer() {
             {t("footer.talk")}
           </h1>
 
-          <section className=" [ flex lg:flex-row flex-col ] justify-between items-start gap-x-6 ">
-            <section className="lg:w-[35%] lg:space-y-20">
-              <section>
-                <p className="text-base"> {t("footer.getUpdated")}</p>
-                <div className="flex-responsive [lg:items-center  ]  gap-2 mt-2 ">
-                  <input
-                    type="email"
-                    placeholder={t("footer.enterEmail")}
-                    className="rounded-full px-4 py-2 bg-white placeholder:text-G-900 outline-none text-black"
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                  <a href={mailtoLink}>
-                    <button className="bg-primary px-4 py-2 rounded-full w-fit">
-                      {t("footer.getUpdate")}
-                    </button>
-                  </a>
+          <section className=" [ flex lg:flex-row flex-col ] justify-between items-start gap-x-6 max-xs:gap-y-6 ">
+            {/* address & contact  */}
+            <section className="mt-4 lg:mt-0 space-y-4">
+              <section className="">
+                <p className="font-bold text-2xl">
+                  {t("footer.address")}
+                </p>
+
+                <div className="mt-2 ">
+                  <p className="font-normal  text-base">
+                    18b ilupeju byepass, ilupeju,{" "}
+                    <br className="hidden lg:block" /> Lagos, Nigeria
+                  </p>
                 </div>
               </section>
 
-              {/* SECTION ADDRESS & CONTACT  */}
-              <section className="flex justify-between flex-responsive gap-4  mt-4 ">
-                <section className="">
-                  <p className="font-medium [ text-2xl lg:text-base ]">
-                  {t("footer.address")}
-                  </p>
-
-                  <div className="mt-2 ">
-                    <p className="font-normal  text-base">
-                      18b ilupeju byepass, ilupeju,{" "}
-                      <br className="hidden lg:block" /> Lagos, Nigeria
-                    </p>
-                  </div>
-                </section>
-
-                <section className="">
-                  <p className="font-medium [ text-2xl lg:text-base ]">
+              <section className="">
+                <p className="font-bold text-2xl">
                   {t("footer.contact")}
-                  </p>
+                </p>
 
-                  <div className="mt-2 ">
-                    <div className="space-y-2 ">
-                      <a href="tel:+2348509409952">
-                        <p>+234 850 940 9952</p>
-                      </a>
+                <div className="mt-2 ">
+                  <div className="space-y-2 ">
+                    <a href="tel:+2348509409952">
+                      <p>+234 850 940 9952</p>
+                    </a>
 
-                      <a href={mailtoLink} className="mt-2">
-                        <p>info@fuelmetrics.com.ng</p>
-                      </a>
-                    </div>
+                    <a href={mailtoLink} className="mt-2">
+                      <p>info@fuelmetrics.com.ng</p>
+                    </a>
                   </div>
-                </section>
+                </div>
               </section>
-              {/*  */}
             </section>
 
+            {/* company  */}
             <section className="mt-4 lg:mt-0">
               <h3 className="font-bold text-2xl">{t("footer.company")}</h3>
               <div className="font-normal my-4 text-base space-y-2">
@@ -97,6 +79,7 @@ export default function Footer() {
               </div>
             </section>
 
+            {/* services  */}
             <section>
               <h3 className="font-bold text-2xl">{t("footer.services")}</h3>
               <div className="font-normal my-4 text-base space-y-2">
@@ -112,30 +95,56 @@ export default function Footer() {
               </div>
             </section>
 
-            <section className="flex-items-center ">
-              <div className="border border-red-800 rounded-full p-8 ml-[-10px]">
-                <Link to="https://www.instagram.com/epumpafrica/?hl=en">
-                  <img src={insta} alt="" />
-                </Link>
-              </div>
+            {/* stay updated  */}
+            <section className="lg:w-[35%] space-y-10">
+              <section className="space-y-4">
+                <p className="text-xl font-semibold"> {t("footer.getUpdated")}</p>
+                <p className="text-sm">  {t("footer.updateLine")}</p>
+                <div className="flex-responsive [lg:items-center  ]  gap-2 mt-2 ">
+                  <input
+                    type="email"
+                    placeholder={t("footer.enterEmail")}
+                    className="rounded-full px-4 py-2 bg-white placeholder:text-G-900 outline-none text-black"
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                  <a href={mailtoLink}>
+                    <button className="bg-primary px-4 py-2 rounded-full w-fit">
+                      {t("footer.getUpdate")}
+                    </button>
+                  </a>
+                </div>
+              </section>
 
-              <div className="border border-purple-100 rounded-full p-8 ml-[-10px]">
-                <Link to="https://x.com/EpumpAfrica">
-                  <img src={twitter} alt="" />
-                </Link>
-              </div>
+              {/* media links  */}
+              <section className="flex-items-center ">
+                <div className="border border-red-800 rounded-full p-8 ml-[-10px]">
+                  <Link to="https://www.instagram.com/epumpafrica/?hl=en">
+                    <img src={insta} alt="" />
+                  </Link>
+                </div>
 
-              <div className="border border-purple-100 rounded-full p-8 ml-[-10px]">
-                <Link to="https://www.linkedin.com/company/epumpafrica/posts/?feedView=all">
-                  <img src={linkedIn} alt="" />
-                </Link>
-              </div>
-              {/* <img src={youtube} alt="" className="border rounded-full p-8" /> */}
+                <div className="border border-purple-100 rounded-full p-8 ml-[-10px]">
+                  <Link to="https://x.com/EpumpAfrica">
+                    <img src={twitter} alt="" />
+                  </Link>
+                </div>
+
+                <div className="border border-purple-100 rounded-full p-8 ml-[-10px]">
+                  <Link to="https://www.linkedin.com/company/epumpafrica/posts/?feedView=all">
+                    <img src={linkedIn} alt="" />
+                  </Link>
+                </div>
+                   <div className="border border-purple-100 rounded-full p-8 ml-[-10px]">
+                  <Link to="https://www.linkedin.com/company/epumpafrica/posts/?feedView=all">
+                    <img src={facebook} alt="" />
+                  </Link>
+                </div>
+              </section>
             </section>
           </section>
 
           <section className="border-t-2 border-white mt-10 pt-4 flex-between">
-            <p>{t('footer.copyright')} ©2025 Fuelmetrics Ltd. </p>
+            <p>{t("footer.copyright")} ©2025 Fuelmetrics Ltd. </p>
           </section>
         </section>
       </section>
