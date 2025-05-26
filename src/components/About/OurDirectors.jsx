@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // ASSETS
 import chidi from "@/assets/svg/chidi.svg";
 import ola from "@/assets/svg/ola.svg";
 import deji from "@/assets/svg/deji.svg";
 import gab from "@/assets/svg/gab.svg";
-import linkedIn from "@/assets/svg/linkedIn.svg";
+import linkedIn from "@/assets/svg/linkedIn-button.svg";
 import helpful from "@/assets/svg/helpful.svg";
 import friendly from "@/assets/svg/friendly.svg";
 import here from "@/assets/svg/here.svg";
@@ -20,7 +21,7 @@ export default function OurDirectors() {
       position: t("about.manageDirector"),
       tag: t("about.enableFuture"),
       desc: t("about.ceo1"),
-      link: "#",
+      link: "https://www.linkedin.com/in/olayide-folorunso-a2300730/",
     },
     {
       img: deji,
@@ -28,7 +29,7 @@ export default function OurDirectors() {
       position: t("about.cso"),
       tag: t("about.biggestInno"),
       desc: t("about.cso1"),
-      link: "#",
+      link: "https://www.linkedin.com/in/ayodejiogundiran/",
     },
     {
       img: gab,
@@ -36,7 +37,7 @@ export default function OurDirectors() {
       position: t("about.cpo"),
       tag: t("about.visualTech"),
       desc: t("about.cpo1"),
-      link: "#",
+      link: "https://www.linkedin.com/in/gabrielojomu/",
     },
     {
       img: chidi,
@@ -44,7 +45,7 @@ export default function OurDirectors() {
       position: t("about.cto"),
       tag: t("about.bringIdeas"),
       desc: t("about.cto1"),
-       link: "#",
+      link: "https://www.linkedin.com/in/chidi-eze/",
     },
   ];
   return (
@@ -59,7 +60,7 @@ export default function OurDirectors() {
       <section className=" container rounded-4xl py-16 space-y-8 !mt-20">
         <article className="flex-responsive px-8 gap-y-10">
           {directors.map((value, index) => {
-            const { img, name, tag, position, desc } = value;
+            const { img, name, position, desc, link } = value;
             return (
               <div
                 key={index}
@@ -67,15 +68,19 @@ export default function OurDirectors() {
               >
                 {/* w-[6.25rem] h-[6.25rem] */}
                 <img src={img} alt="" className="" />
-                <p className="text-sm font-semibold">{tag}</p>
-                <p className=" text-white-900 text-center text-xs italic [ lg:w-9/12 ]">
-                  {desc}
-                </p>
-
                 <div className="center-content font-semibold flex-col">
                   <h1 className="text-lg  text-primary">{name}</h1>
                   <p className="text-red-500 text-sm">{position}</p>
-                  <img src={linkedIn} alt="" className="mt-1" />
+                </div>
+                {/* <p className="text-sm font-semibold">{tag}</p> */}
+                <p className=" text-white-900 text-center text-sm italic [ lg:w-9/12 ]">
+                  {desc}
+                </p>
+
+                <div className="center-content ">
+                  <Link to={link} target="_blank">
+                    <img src={linkedIn} alt="" className="w-28" />
+                  </Link>
                 </div>
               </div>
             );
@@ -86,17 +91,23 @@ export default function OurDirectors() {
       <section className="flex-responsive uppercase container justify-around my-10 gap-y-6 bg-blue-100 py-10 rounded-3xl">
         <div className="center-content flex-col">
           <img src={helpful} alt="" />
-          <p className="text-base font-medium text-primary">{t('about.helpful')}</p>
+          <p className="text-base font-medium text-primary">
+            {t("about.helpful")}
+          </p>
         </div>
 
         <div className="center-content flex-col">
           <img src={friendly} alt="" />
-          <p className="text-base font-medium text-primary">{t('about.friendly')}</p>
+          <p className="text-base font-medium text-primary">
+            {t("about.friendly")}
+          </p>
         </div>
 
         <div className="center-content flex-col">
           <img src={here} alt="" />
-          <p className="text-base font-medium text-primary">{t('about.here')}</p>
+          <p className="text-base font-medium text-primary">
+            {t("about.here")}
+          </p>
         </div>
       </section>
     </section>
