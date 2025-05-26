@@ -135,7 +135,7 @@ export default function Footer() {
                   </Link>
                 </div>
                    <div className="border border-purple-100 rounded-full p-8 ml-[-10px]">
-                  <Link to="https://www.linkedin.com/company/epumpafrica/posts/?feedView=all">
+                  <Link to="https://www.facebook.com/share/19Kym1bgon/">
                     <img src={facebook} alt="" />
                   </Link>
                 </div>
