@@ -88,7 +88,7 @@ export default function FAQ() {
         </div>
 
         <section className="space-y-4 [ lg:mt-10 mt-5 ] ">
-          <h2 className="my-8 text-3xl italic font-semibold font-inter ">
+          <h2 className="my-8 text-3xl  font-semibold font-inter ">
             Fuelmetrics{" "}
           </h2>
           <section
@@ -125,14 +125,14 @@ export default function FAQ() {
             <FAQItem faq={faq} key={index} />
           ))}
 
-          <h2 className="my-8 text-3xl italic font-semibold font-inter ">
+          <h2 className="my-8 text-3xl  font-semibold font-inter ">
             Remis - Fleet Management & Fuel Voucher System{" "}
           </h2>
           {remisFaqs.map((faq, index) => (
             <FAQItem faq={faq} key={index} />
           ))}
 
-          <h2 className="my-8 text-3xl italic font-semibold font-inter ">
+          <h2 className="my-8 text-3xl  font-semibold font-inter ">
             Epump - Fuel Station Management System{" "}
           </h2>
           {epumpFaqs.map((faq, index) => (

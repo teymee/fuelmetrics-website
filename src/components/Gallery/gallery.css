@@ -1,5 +1,5 @@
 .banner-bg {
   background: url("../../assets/svg/gallery-bg.svg") no-repeat;
-  background-position:right;
+  background-position:100% 20%;
   /* background-size: cover; */
 }

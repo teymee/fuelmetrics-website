@@ -65,7 +65,7 @@ export default function Events() {
                       alt={title}
                       className="lg:w-[600px] lg:h-[446px] w-[300px] h-[233px] center-content relative z-20"
                     />
-                    <div className="[ lg:w-[600px] lg:h-[446px]  ] bg-blue-200 absolute -translate-1/2 top-[53%] left-[45%] 3xl:left-[46%] z-10"></div>
+                    <div className="[ lg:w-[600px] lg:h-[446px]  ] bg-blue-200 absolute -translate-1/2 top-[53%] left-[45%] 2xl:left-[29%] 3xl:left-[46%] z-10"></div>
                   </div>
 
                   <div className="lg:w-[40%] [ lg:text-left text-center ]">

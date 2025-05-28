@@ -92,7 +92,8 @@ export default function Achievement() {
 
         <div className="space-y-3 text-center">
           <span className="blue-colored-text">
-            5b <sup className="blue-colored-text lg:ml-[-20px]">+</sup>
+            5b+ 
+            {/* <sup className="blue-colored-text lg:ml-[-20px]">+</sup> */}
           </span>
           <p className="[ lg:text-lg text-[8px] ] text-gray-900">
             {t("home.tranCompleted")}

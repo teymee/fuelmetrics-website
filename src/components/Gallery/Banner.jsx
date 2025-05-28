@@ -8,7 +8,7 @@ export default function Banner() {
   return (
     <section className="container [ lg:h-[80vh] h-[65vh] 3xl:h-[55vh] ] flex-between  [ flex lg:flex-row flex-col ] banner-bg py-10 relative">
       <section className="lg:w-1/2">
-        <h2 className="text-[4rem] font-medium leading-20 text-primary">
+        <h2 className="text-[4rem] lg:mt-[-30%] font-medium leading-20 text-blue-500">
           {t("gallery.our")}
           <span className="text-fm-secondary-500 ml-4 ">
             {t("gallery.gallery")}

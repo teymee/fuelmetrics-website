@@ -9,7 +9,7 @@ export default function CareerHero() {
     <section className="h-screen 3xl:h-[60vh]">
       <section className="[ flex-between lg:flex-row flex-col ] container   ">
         <section className="lg:w-1/2 space-y-5 [ lg:text-left text-center ] ">
-          <h1 className="font-medium [ lg:leading-16 leading-10 ] [ lg:text-[64px] text-[32px] ] text-primary">
+          <h1 className="font-medium [ lg:leading-16 leading-10 ] [ lg:text-[64px] text-[32px] ] text-blue-500">
             {t("career.bannerText")}
             <span className=" text-fm-secondary-500 captilize ml-4">
               {t("about.growth")}
