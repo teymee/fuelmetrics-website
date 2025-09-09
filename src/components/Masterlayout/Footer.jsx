@@ -40,7 +40,7 @@ export default function Footer() {
 
                 <div className="mt-2 ">
                   <p className="font-normal  text-base">
-                    18b ilupeju byepass, ilupeju,{" "}
+                    18b Ilupeju byepass, Ilupeju,{" "}
                     <br className="hidden lg:block" /> Lagos, Nigeria
                   </p>
                 </div>
@@ -54,7 +54,7 @@ export default function Footer() {
                 <div className="mt-2 ">
                   <div className="space-y-2 ">
                     <a href="tel:+2348509409952">
-                      <p>+234 850 940 9952</p>
+                      <p>+234 913 104 8999</p>
                     </a>
 
                     <a href={mailtoLink} className="mt-2">
