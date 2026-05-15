@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
+import CookiePolicyBanner from "../UI/CookiePolicyBanner";
 
 export default function Masterlayout({ children }) {
   return (
@@ -13,6 +14,7 @@ export default function Masterlayout({ children }) {
         </section>
         <section className="">{children}</section>
         <Footer />
+        <CookiePolicyBanner />
       </section>
     </>
   );

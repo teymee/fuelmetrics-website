@@ -12,6 +12,11 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
      }
   },
+  build: {
+    // Do not generate source map files in production bundles.
+    sourcemap: false,
+    minify: 'esbuild',
+  },
   server: {
     port: 5174, 
   }

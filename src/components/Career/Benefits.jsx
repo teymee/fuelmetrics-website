@@ -71,8 +71,8 @@ export default function Benefits() {
               {benefits.map((benefit, index) => {
                 const { img, bonus, position } = benefit;
                 return (
-                  <section className="">
-                    <div key={index} className={`${position}   `}>
+                  <section  key={index} className="">
+                    <div className={`${position}   `}>
                       <img
                         src={img.src}
                         alt=""
